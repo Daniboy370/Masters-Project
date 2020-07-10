@@ -1,0 +1,89 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Abstract}{1}{figure.caption.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Acknowledgments}{1}{figure.caption.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Nomenclature}{2}{figure.caption.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Introduction}{4}{section.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1}Background}{4}{subsection.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2}GA in the service of combustion problems}{6}{subsection.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3}Intention statement}{9}{subsection.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}The Combustion Model}{10}{section.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}The Spray Equation}{11}{subsection.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.1}Boundary conditions}{13}{subsubsection.2.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.1.2}Analytical solution}{14}{subsubsection.2.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2}The Gaseous Phase Equation}{15}{subsection.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.1}Boundary conditions}{16}{subsubsection.2.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.2}Analytical solution}{17}{subsubsection.2.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3}The Temperature Equation}{22}{subsection.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.1}Boundary conditions}{22}{subsubsection.2.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.2}Analytical solution}{24}{subsubsection.2.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4}Results}{27}{subsection.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.4.1}Maximum flame height}{29}{subsubsection.2.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.4.2}Maximum tip flame temperature}{31}{subsubsection.2.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5}Discussion}{34}{subsection.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}The Optimization Model}{36}{section.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}Problem formulation}{37}{subsection.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2}Explicit formulation}{38}{subsection.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Results}{40}{section.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1}Flame height optimization}{40}{subsection.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.1.1}Discussion}{42}{subsubsection.4.1.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2}Flame temperature Optimization}{43}{subsection.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.2.1}Discussion}{46}{subsubsection.4.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.2.2}Local underperformance}{46}{subsubsection.4.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3}Optimization summary}{47}{subsection.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4}P\IeC {\'e}clet Number}{47}{subsection.4.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.4.1}Pe vs. flame height}{48}{subsubsection.4.4.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.4.2}Discussion}{49}{subsubsection.4.4.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.4.3}Pe vs. flame temperature}{50}{subsubsection.4.4.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {4.4.4}Discussion}{52}{subsubsection.4.4.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5}Empirical validation}{53}{subsection.4.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Conclusions}{56}{section.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1}Further Work}{56}{subsection.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{References}{57}{subsection.5.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Appendices}{59}{Item.21}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Appendix A}{59}{section*.46}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Appendix B}{61}{figure.caption.48}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{Appendix C}{62}{figure.caption.49}
