@@ -74,7 +74,7 @@ undesired mess, the user is advised to act as follows :
 0.  Download directory from upper right  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; :inbox_tray: <br/> 
 1. Install *Matlab* ®, version > R2018a  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; :scientist:  <br/> 
 2. Install the [Global Optimization Toolbox](https://www.mathworks.com/products/global-optimization.html) library  &nbsp; &nbsp;  :mage_man: <br/> 
-3. Set desirable initial setup and execute ! &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; :play_or_pause_button:
+3. Set desirable initial setup and execute ! &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; :play_or_pause_button:
 
 ### Directory tree
 <pre>
