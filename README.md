@@ -71,10 +71,10 @@ Utilizing *Matlab* ® Genetic Algorithm to find the optimal polydisperse spray :
 The project consists of two directories that implement two of the model's main scenarios. In order to avoid <br/> 
 undesired mess, the user is advised to act as follows :
 
-:inbox_tray:  .  Download directory from upper right  <br/> 
-:scientist:  .  Install *Matlab* ®, version > R2018a  <br/> 
-:mage_man:  .  Install the [Global Optimization Toolbox](https://www.mathworks.com/products/global-optimization.html) library  <br/> 
-:play_or_pause_button:  .  Set desirable initial configuration and execute 
+0.  Download directory from upper right  &nbsp; &nbsp; &nbsp; :inbox_tray: <br/> 
+1. Install *Matlab* ®, version > R2018a  &nbsp; &nbsp; &nbsp; :scientist:  <br/> 
+2. Install the [Global Optimization Toolbox](https://www.mathworks.com/products/global-optimization.html) library  :mage_man: <br/> 
+3. Set desirable initial configuration and execute :play_or_pause_button:
 
 ### Directory tree
 <pre>
