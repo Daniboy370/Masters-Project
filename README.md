@@ -33,31 +33,31 @@ The temperature field
 > &nbsp; &nbsp; &nbsp; **run** : *'main_flame_Temp.m'*
 
 The temperature field solution per chosen initial condition :
-![alt text](https://github.com/Daniboy370/Masters-Project/blob/master/Images/T_field.png)
+![alt text](https://github.com/Daniboy370/Masters-Project/blob/master/Misc/Images/T_field.png)
 
 Latitudes of the temperature field in a 3D view :
-![alt text](https://github.com/Daniboy370/Masters-Project/blob/master/Images/T_field_raw.png)
+![alt text](https://github.com/Daniboy370/Masters-Project/blob/master/Misc/Images/T_field_raw.png)
 
 The temperature space 
 -----------------------
 > &nbsp; &nbsp; &nbsp; **run**: *'main_flame_Temp.m'*
 
 Extracting the maximum tip flame temperature (T<sub>max</sub>) vs. 3 parameters (Time complexity :arrow_up:) :  
-![alt text](https://github.com/Daniboy370/Masters-Project/blob/master/Images/T_max_full_a.png)
+![alt text](https://github.com/Daniboy370/Masters-Project/blob/master/Misc/Images/T_max_full_a.png)
 
 The flame height space (Monosectional)
 ---------------------------------
 > &nbsp; &nbsp; &nbsp; **run**: 'main_flame_Height.m'
 
 Extracting the maximum flame height (eta<sub>max</sub>) vs. 3 parameters (Time complexity :arrow_down:) :  
-![alt text](https://github.com/Daniboy370/Masters-Project/blob/master/Images/p_dist_mono_0.png)
+![alt text](https://github.com/Daniboy370/Masters-Project/blob/master/Misc/Images/p_dist_mono_0.png)
 
 The flame height space (Polysectional)
 ---------------------------------------
 > &nbsp; &nbsp; &nbsp; **run**: 'main_flame_Poly.m' 
 
 Extracting the maximum flame height (eta<sub>max</sub>) vs. 3 parameters (Polysectional) :  
-![alt text](https://github.com/Daniboy370/Masters-Project/blob/master/Images/p_dist_poly.png)
+![alt text](https://github.com/Daniboy370/Masters-Project/blob/master/Misc/Images/p_dist_poly.png)
 
 ## The optimization model
 
@@ -65,7 +65,7 @@ Extracting the maximum flame height (eta<sub>max</sub>) vs. 3 parameters (Polyse
 > **run**: 'main_flame_Poly.m' 
 
 Utilizing *Matlab* ® Genetic Algorithm to find the optimal polydisperse spray : 
-![alt text](https://github.com/Daniboy370/Masters-Project/blob/master/Images/GA_opt.png)
+![alt text](https://github.com/Daniboy370/Masters-Project/blob/master/Misc/Images/GA_opt.png)
 
 # Installation
 The project consists of two directories that implement two of the model's main scenarios. In order to avoid <br/> 
