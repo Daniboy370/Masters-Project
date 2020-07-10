@@ -2,7 +2,7 @@
 
 Master's project towards M.Eng in Aeronautical Engineering in the Technion university. 
 In a nutshell, it presents an heuristic implementation of the Genetic Algorithm with respect to a combustion model. Eventually, it manages
-to answer the question what is the optimal initial droplet size distribution that guarantees an optimal flame performance (paper @ arXiv). 
+to answer the question what is the optimal initial droplet size distribution that guarantees an optimal flame performance.
 
 
 # Table of contents
