@@ -62,7 +62,7 @@ Extracting the maximum flame height (eta<sub>max</sub>) vs. 3 parameters (Polyse
 ## The optimization model
 
 > Subfolder : "\Genetic Algorithm" \
-> **run**: 'main_flame_Poly.m' 
+> **run**: 'main_GA.m' 
 
 Utilizing *Matlab* ® Genetic Algorithm to find the optimal polydisperse spray : 
 ![alt text](https://github.com/Daniboy370/Masters-Project/blob/master/Misc/Images/GA_opt.png)
