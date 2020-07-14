@@ -79,13 +79,13 @@ undesired mess, the user is advised to act as follows :
 ### Directory tree
 <pre>
 ├── Model
-|   ├── main_flame_field.m'
-|   ├── main_flame_Temp.m'
-|   ├── main_flame_Height.m'
-|   ├── main_flame_Poly.m'
+|   ├── main_flame_field.m
+|   ├── main_flame_Temp.m
+|   ├── main_flame_Height.m
+|   ├── main_flame_Poly.m
 ...
 ├── Genetic Algorithm
-|   ├── main_GA.m'
+|   ├── main_GA.m
 ...
 ├── Misc.
 └── Readme.md
