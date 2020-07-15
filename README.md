@@ -53,6 +53,7 @@ The flame height space (Monosectional)
 > &nbsp; &nbsp; &nbsp; **run**: 'main_flame_Height.m'
 
 Extracting the maximum flame height (eta<sub>max</sub>) vs. 3 parameters (Time complexity :arrow_down:) :  
+
 ![alt text](https://github.com/Daniboy370/Masters-Project/blob/master/Misc/Images/p_dist_mono_0.png)
 
 The flame height space (Polysectional)
