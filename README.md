@@ -14,10 +14,10 @@ to answer the question what is the optimal initial droplet size distribution tha
 + [Installation](#installation)
 + [Usage](#usage)
   * [The combustion model](the-combustion-model)
-   + [The temperature field](#the-temperature-field)
-   + [The temperature space](#the-temperature-space)
-   + [The flame height space (Monosectional)](#the-flame-height-space-monosectional)
-   + [The flame height space (Polysectional)](#the-flame-height-space-polysectional)
+   * [The temperature field](#the-temperature-field)
+    * [The temperature space](#the-temperature-space)
+    * [The flame height space (Monosectional)](#the-flame-height-space-monosectional)
+    * [The flame height space (Polysectional)](#the-flame-height-space-polysectional)
   * [The optimization model](#the-optimization-model)
 + [Citation](#citation)
 <!--te-->
@@ -28,7 +28,7 @@ to answer the question what is the optimal initial droplet size distribution tha
 Development of the governing equations describing the mathematical model of the polydisperse spray diffusion flame by presenting the underpinning assumptions, equations, normalization, boundary conditions and full solution :
 > Subfolder : "\Model"
 
-#### The temperature field
+The temperature field
 ---------------------
 > &nbsp; &nbsp; &nbsp; **run** : *'main_flame_Temp.m'*
 
