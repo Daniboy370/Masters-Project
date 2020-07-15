@@ -25,7 +25,7 @@ to answer the question what is the optimal initial droplet size distribution tha
 # Usage
 
 ## The combustion model
-
+Development of the governing equations describing the mathematical model of the polydisperse spray diffusion flame by presenting the underpinning assumptions, equations, normalization, boundary conditions and full solution :
 > Subfolder : "\Model"
 
 The temperature field
@@ -60,6 +60,8 @@ Extracting the maximum flame height (eta<sub>max</sub>) vs. 3 parameters (Polyse
 ![alt text](https://github.com/Daniboy370/Masters-Project/blob/master/Misc/Images/p_dist_poly.png)
 
 ## The optimization model
+In this section the combustion model is adjusted to the optimization model. At first, a formal development of the GA will be presented, then the combustion model will be merged within :
+![alt text](https://github.com/Daniboy370/Masters-Project/blob/master/Misc/Images/GA_alg.png)
 
 > Subfolder : "\Genetic Algorithm" \
 > **run**: 'main_GA.m' 
