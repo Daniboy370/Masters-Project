@@ -14,10 +14,10 @@ to answer the question what is the optimal initial droplet size distribution tha
 + [Installation](#installation)
 + [Usage](#usage)
   * [The combustion model](the-combustion-model)
-  * [The temperature field](#the-temperature-field)
-  * [The temperature space](#the-temperature-space)
-  * [The flame height space (Monosectional)](#the-flame-height-space-monosectional)
-  * [The flame height space (Polysectional)](#the-flame-height-space-polysectional)
+   * [The temperature field](#the-temperature-field)
+   * [The temperature space](#the-temperature-space)
+   * [The flame height space (Monosectional)](#the-flame-height-space-monosectional)
+   * [The flame height space (Polysectional)](#the-flame-height-space-polysectional)
   * [The optimization model](#the-optimization-model)
 + [Citation](#citation)
 <!--te-->
@@ -60,7 +60,7 @@ Extracting the maximum flame height (eta<sub>max</sub>) vs. 3 parameters (Polyse
 ![alt text](https://github.com/Daniboy370/Masters-Project/blob/master/Misc/Images/p_dist_poly.png)
 
 ## The optimization model
-In this section the combustion model is adjusted to the optimization model. At first, a formal development of the GA will be presented, then the combustion model will be merged within :
+In this section the combustion model is adjusted to the optimization model according to the following pseudocode :
 ![alt text](https://github.com/Daniboy370/Masters-Project/blob/master/Misc/Images/GA_alg.png)
 
 > Subfolder : "\Genetic Algorithm" \
