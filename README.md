@@ -87,7 +87,7 @@ undesired mess, the user is advised to act as follows :
 
 ### Directory tree
 <pre>
-DIR
+[root directory]
 ├── Model
 |   ├── main_flame_field.m
 |   ├── main_flame_Temp.m
