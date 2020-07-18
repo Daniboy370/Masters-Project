@@ -29,7 +29,7 @@ to answer the question what is the optimal initial droplet size distribution tha
 
 Development of the governing equations describing the mathematical model of the polydisperse spray diffusion flame by presenting the underpinning assumptions, equations, normalization, boundary conditions and full solution :
 
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![alt text](https://github.com/Daniboy370/Masters-Project/blob/master/Misc/Images/model_schema.png)
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ![alt text](https://github.com/Daniboy370/Masters-Project/blob/master/Misc/Images/model_schema.png)
 
 
 The temperature field
