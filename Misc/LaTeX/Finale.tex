@@ -80,20 +80,16 @@ Evolutionary Algorithms (EA) are an ML subclass inspired by the process of natur
 
 Despite being well-defined, many engineering problems may suffer from heavy analytical entanglement when approaching the derivation process, as required in classic optimization methods. Therefore, the main motivation here, is to work around that obstacle.
 
-In this piece of work, I would like to harness the GA capabilities to examine optimality with respect to a unique combustion problem, in a way that was never performed before. To be more precise, I would like to utilize it to answer the question : "What form of an initial droplet size distribution (iDSD) will guarantee an optimal spray performance?"
+In this piece of work, I would like to harness the GA capabilities to examine optimality with respect to a unique combustion problem, in a way that was never performed before. To be more precise, I would like to utilize it to answer the question : "What form of an initial droplet size distribution (iDSD) will guarantee an optimal flame ?"
 
 To answer this question, I will first provide a general introduction to the GA method, then develop the combustion model, and eventually merge both into an optimization problem.
 
 \subsection*{Acknowledgments} \addcontentsline{toc}{subsection}{Acknowledgments}
-I would like to pay my gratitude to the project supervisor - Professor Barry Greenberg , for the professional academic guidance and kind hearted support all along the working process.
+First and foremost, I would like to thank Ms. Debbie Warril. \\ Without you I wouldn't have made it this far. As simple as that. Thank you.
 
-I would also like to thank the faculty secretary - Ms. Judith Greenberg , for helping me out all along my masters studies, through the ups and downs, always there with a big smile.
+I would also like to pay my gratitude to the project supervisor - Professor Barry Greenberg. For the professional academic guidance and kind hearted support all along the way.
 
-%My academic coordinator Professor Haim Abramovich, for assisting and complying with my occasion demands.
-
-%Last but not least - Ms. Debbie Warril - without you I wouldn't have made it this far.
-
-Last but not least, my beloved parents and family, just for being who you are.
+Last but not least, I would like to thank my beloved parents and family, just for being who you are. I believe we are lucky people in this world.
 
 \newpage
 
@@ -186,7 +182,8 @@ The GA consists of 3 mechanisms that reflect the natural selection process (surv
 
 \textbf{Natural selection} - The individual's / parent probability to be selected to produce the offspring of the next generation. Its genetic variation determines its survival chances, and thus points which chromosomes are to be preserved and multiplied between generations. In nature, it's caused by forced competitive interaction between different populations and individuals, that rewards the fittest among them (best intelligence, physique etc.). 
 
-\textbf{Crossover} - The recombination of the genetic information of two parents (in nature known as mating). Better individuals will participate in the production of the next generation, such that the last generation will hold the best former genetic qualities. 
+\textbf{Crossover} - The recombination of the genetic information of two parents (in nature known as mating). Better individuals will participate in the production of the next generation, such that the last generation will hold the best former genetic qualities. Each \underline{single} crossover (out of hundreds) is subjected to a \underline{random} partitioning, across every generation.
+
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.29]{q_10.png}
@@ -201,24 +198,25 @@ $\bullet$ \ \textbf{Chromosome} - the individual's set of properties that repres
 
 $\bullet$ \ \textbf{Population} - set of $n$-random candidate solutions, given an optimization problem.
 
-The above mechanisms are applied in a loop, where each iteration (=generation) the fittest individuals are extracted and go through genetic recombination. This process continues until a termination criterion is met, and the best candidate solution is received. From left to right is the evolution process from 1st random initialization until the 78th generation :
+The above mechanisms are applied in a loop, where each iteration (=generation) the fittest individuals are extracted and go through genetic recombination. This process continues until a termination criterion is met, and the best candidate solution is received. From left to right is the evolution process from 1st random initialization until the 78th generation : \vspace{5mm}
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=1.13\linewidth, center]{performance.png}
 \end{figure}
-Note the fitness (score) evolution until approaching the maximum of - $f_{GA}(x_i) \leq 10$ . 
+Consider the above fitness function to be an $\ell_1$-norm \hspace{0.75mm} : \,$f_{GA}(x_{i}^t) = \| x_i^t \|_1 = \sum_j | x_{i,j} |$. \\ The optimal candidate solution at generation $t$ means  : \,$\text{arg} \, \max_{x^t} \, f_{GA}(X^t)$ . \\
+Note the fitness (score) evolution from $t=0$ until $t=78$ across all of the population.
 
-As seen, the chromosomes are consisted of an atomic sequences named Genes. Assuming an arbitrary chromosome that's composed of $n$ genes we get \,$x_i \in \mathbb{R}^n$\,, \,whereas the different chromosomes can be seen as a points in the \,$\mathbb{R}^{n}$\, space, whose genes are coordinates. 
+As seen, the chromosomes are consisted of atomic sequences named Genes. Assuming an arbitrary chromosome that's composed of $n$ genes we get \,$x_i \in \mathbb{R}^n$\,, \,whereas the different chromosomes can be seen as a points in the \,$\mathbb{R}^{n}$\, space, whose genes are coordinates. 
 
 The GA then, is responsible for finding the best performance among all candidates, as they are measured by a fitness function, or equivalently as they are projected onto a metric axis. The optimal solution (minimum / maximum) is actually the candidate whose score performs best in the $\mathbb{R}^{n+1}$, namely the closest to the global extremum (see \hyperlink{app_extremum}{Appendix A}).
 
 Classic optimization techniques utilize a closed form objective (=fitness) functions that are conveniently differentiable. By calculating the roots of their first and second derivatives, one can extract solutions in the form of minima, maxima or a saddle point [\ref{c_optima}]. 
 
-However, in complex analytical cases (as in ours), one would rather work around that tiring derivation process which can impose significant challenges, and implement instead solution oriented heuristic methods.
 
-For illustration, consider the following 3D function : $\tab \circ \ ( x_0, y_0, z_0 ) = ( 10, 10, 1 )$ 
+However, in complex analytical cases (as in ours), one would rather work around that tiring derivation process which can impose significant challenges, and implement instead solution oriented heuristic methods. For illustration, consider the following 3D function : 
 \begin{align*}
-f(x, y, z) = \frac{sin(x-x_0)}{x-x_0} \cdot \frac{sin(x-y_0)}{x-y_0} \cdot \Big( -z^3 + z_0 \Big)
+f(x, y, z) = \frac{sin(x-x_0)}{x-x_0} \cdot \frac{sin(x-y_0)}{x-y_0} \cdot \Big( -z^3 + z_0 \Big) \quad ; \quad ( x_0, y_0, z_0 ) = ( 10, 10, 1 )
 \end{align*}
 
 \begin{figure}[H]
@@ -234,7 +232,7 @@ One of the main advantages of the GA is its indifference to the internal working
 
 \subsection{GA in the service of combustion problems}
 
-As introduced above, and detailed thoroughly \href{https://www.cs.colostate.edu/~genitor/MiscPubs/tutorial.pdf}{here}$^{[\ref{c7}]}$, the GA are powerful heuristic search methods, successfully used to find optimal or near-optimal solutions in many complex design spaces. Early implementations of the GA in context of combustion were made back in the 90's, as Runhe Huang (1995) [\ref{ga0}] showed an implementation on a combustion control problem. Instead of learning a control action for every point encountered, a GA was used to learn control actions for a set of limited number of prototype states, and afterwards applying nearest neighbour matching to extract the optimal rule (using a burner combustion as the model). 
+As introduced above, and detailed thoroughly \href{https://www.cs.colostate.edu/~genitor/MiscPubs/tutorial.pdf}{here}$^{[\ref{c7}]}$, the GA are powerful heuristic search methods, successfully used to find optimal or near-optimal solutions in many complex design spaces. Early implementations of the GA in context of combustion were made back in the 90's, as Runhe Huang (1995) [\ref{ga0}] showed an implementation on a combustion control problem. Instead of learning a control action for every point encountered, a GA was used to learn control actions for a set of limited number of prototype states, and afterwards applying nearest neighbour matching to extract the optimal rule. 
 
 Danielson et al. (1998) [\ref{ga1}], presented the GABSys (GA Bond Graph System), an optimization tool that utilized a 2-stroke combustion engine model : 
 \begin{figure}[H]
@@ -243,11 +241,14 @@ Danielson et al. (1998) [\ref{ga1}], presented the GABSys (GA Bond Graph System)
 \end{figure}
 They parametrized several related factors (geometric, thermodynamic etc.), and expressed the objective (fitness) function in terms of fuel consumption, power etc. (along cycles), such that eventually a performance space could be spanned and satisfy local extrema : "Although there is no guarantee that the result is optimal, the resulting engine is still very impressive considering that after fewer than 3,000,000 designs from a domain of 1.329$\cdot 10^{36}$, the GA selects a constructable fuel-efficient engine design".
 
-Polifke et al. (1998) [\ref{ga2}] used the GA for combustion reactive mechanism to carry out the matching procedure with a minimum requirement of human effort. Harris et al. (1999) [\ref{f11}] used the GA for determining the optimal reaction rate parameters of the O/F mixture.
+Polifke et al. (1998) [\ref{ga2}] used the GA for combustion reactive mechanism to carry out the subtle optimization process, with a minimum human effort. Harris et al. (1999) [\ref{f11}] used the GA for determining the optimal reaction rate parameters of the O/F mixture.
 
-Vossoughi $\&$ Rezazadeh (2005) [\ref{ga8}] introduced a multi-objective GA for an engine control unit, where the objective functions were tailored to the calibration parameters in sought of optimal configuration. Quite similarly, Rose et al. (2009) [\ref{ga3}] implemented the GA on a gas-exchange system of combustion engine, producing a significantly higher power output than was achieved through a basic manual optimization procedure. 
+Vossoughi $\&$ Rezazadeh (2005) [\ref{f12}] introduced a multi-objective GA for an engine control unit, where the objective functions were tailored to the calibration parameters in sought of optimal configuration. Quite similarly, Rose et al. (2009) [\ref{ga3}] implemented the GA on a gas-exchange system of combustion engine, producing a significantly higher power output than was achieved through a basic manual optimization procedure. 
 
-Sikalo et al. (2015) [\ref{f1}] described an automatic method for the optimization of reaction rate constants of reduced reaction mechanisms. Based on GA, the technique aimed at finding new reaction rate coefficients that minimize the error introduced by the preceding reduction process. The error was defined by an objective function that covers regions of interest where the reduced mechanism may deviate from the original mechanism (laminar flame or reactor simulations).
+Shtauber \& Greenberg (2010) [\ref{ga33}] conducted a wide study of polydisperse
+spray diffusion flames. By analytical and numerical investigation, they have shown the iDSD influence upon the flame properties and its sensitivity to extinction. It is worth mentioning that this project is considerably a continued work on Shtauber's thesis, but focuses primarily on finding the optimal flame properties, using the GA.
+
+Sikalo et al. (2015) [\ref{f1}] described an automatic method for the optimization of reaction rate constants of reduced reaction mechanisms. Based on GA, the technique aimed at finding new reaction rate coefficients that minimize the error introduced by the preceding reduction process. The error was defined by an objective function that covers regions of interest where the reduced mechanism may deviate from the original mechanism.
 
 Kaplan et al. (2015) [\ref{f2}] presented a general approach for developing an automated procedure to determine optimal reaction parameters for a simplified model to simulate flame acceleration and deflagration-to-detonation (DDT) in a methane-air mixture. The laminar flame profile was computed using reaction parameters in a 1D Navier-Stokes code, and matched the profile obtained by a detailed chemical reaction mechanism. 
 
@@ -277,7 +278,7 @@ At first, by being able to express the temperature field and investigating its r
 
 Afterwards, I would like to gain control on the GA model by being able to execute optimization schemes in a growing complexity order, by either extreme chemical scenarios or by maximizing the degree of freedom (DoF).
 
-At last, when full integration is achieved, the GA will be harnessed for the sake of optimization scenarios in order to shed light on the principal factors that may optimize the current combustion model. These steps comprise the current piece of work, in a way that was not conducted before, especially on the seam between GA and combustion. 
+Finally, when full integration is achieved, the GA will be harnessed for the sake of optimization scenarios in order to shed light on the principal factors that may optimize the current combustion model. These steps comprise the current piece of work, in a way that was not conducted before, especially on the seam between GA and combustion. 
 I aim to innovate by investigating the cause and effects evoked as a result of the optimality, and validate them according to the literature.
 
 \newpage
@@ -289,16 +290,16 @@ In this section I will develop the governing equations describing the mathematic
 
 \subsubsection*{The big picture}
 
-Based on the classic flame model of Burke \& Schumann [1928], the F/O interaction is separated by a steady state diffusive flame, after laminar and equal co-flowing :
+Based on the classic flame model of Burke \& Schumann (1928) [\ref{ga8}], the F/O interaction is separated by a steady state diffusion flame, in a laminar parallel co-flow :
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.425]{model_schema.png}
 \end{figure}
 
-This model was further elaborated by \textit{Greenberg} (1989) [\ref{greenb}] by assuming that the liquid fuel droplets were homogeneously suspended in an inert gas stream.
+This model was further elaborated by Greenberg (1989) [\ref{ga9}] by assuming that the liquid fuel droplets were homogeneously suspended in an inert gas stream.
 
-Using Tambour [1984] sectional approach for describing the spray polydispersity, in addition to the droplets evaporation rate, it is necessary to refer to the droplets different sizes, as a result of the iDSD or by the evaporation rate mechanism ( \,$d^2 \, law$ ).
+Using Tambour (1985) [\ref{ga10}] sectional approach for describing the spray polydispersity, in addition to the droplets evaporation rate, it is necessary to refer to the droplets different sizes, as a result of the iDSD and the evaporation rate mechanism ( \,$d^2 \, law$ ).
 
 \newpage
 
@@ -311,7 +312,7 @@ Each droplet of the spray is indicated by\ $j \in \mathbb{N}$\ that denotes the 
 \begin{align} %\label{q00}
 \frac{d n_j}{dt} = -E_j n_j + E_{j+1} n_{j+1} \quad , \quad j =1, 2, ...
 \end{align}
-$E_j$ indicates the evaporation rate of the single $j$-th droplet, such that it is not dependent on the environment's temperature, but on the droplet’s size, based on $d^2\, law$. We’ll divide the spray into N sections and define an integral property (IP) for the $j$-th section :
+$E_j$ indicates the evaporation rate of the single $j$-th droplet, such that it is not dependent on the environment's temperature, but on the droplet’s size, based on $d^2\, law$. We’ll divide the spray into N sections and define an integral property (IP) for the $i$-th section :
 \begin{align} \label{2_Q_i}
 Q_i(t, x, y, v) \triangleq \int_{v_{L_i}}^{v_{H_i}} \alpha v^{\hat{\gamma}} n(t, x, y, v) dv
 \end{align}
@@ -330,11 +331,11 @@ I. \hspace{2.45mm} Expresses $Q_i$’s growth \hspace{5.75mm} by droplets \under
 II. \hspace{1.0mm} Expresses $Q_i$’s diminution by droplets \underline{downgrade} from the $i$-th section. \\
 III.\, Expresses $Q_i$’s diminution by droplets \underline{evaporation} in the $i$-th section.
 
-Using the general conservation equation given by Williams [1985] :
+Using the general conservation equation given by Williams (1985) [\ref{ga11}] :
 \begin{align} 
 \frac{ \partial n}{ \partial t} + \frac{ \partial}{ \partial v} ( \underbrace{\tilde{R}}_{ \frac{\partial v}{\partial t}} n ) + \nabla \cdot ( U_d n ) + \nabla_{U_d} \cdot ( \underbrace{F}_{  \underset{ \text{accel.}}{\text{Drag}}} n ) = \Gamma
 \end{align} 
-Where $\Gamma$ is a source of droplets resulted from the collision rate. However, we should recall some of the prior assumptions made in the thesis :
+Where $\Gamma$ is a source of droplets resulted from the collision rate. However, we should recall some of the prior assumptions made in the thesis [\ref{ga33}] :
 \begin{align}
 \underbrace{\nabla_{U_{d}} \cdot(F n)}_{v_{d r o p}=v_{g a s}}=0 \tab \underbrace{\frac{\partial n}{\partial t}}_{ \underset{\text {state}}{\text{steady}} }=0 \tab \underbrace{\Gamma}_{ \underset{\text {collision}}{\text{negligible}} }=0 \tab \underbrace{U_{d}=U_{0_{g}}}_{\underset{\text {collision}}{\text{negligible}} }=0
 \end{align}  
@@ -358,7 +359,7 @@ C_{i} =\frac{3}{2} E\left[\frac{3 d_{H_{i}}-2 d_{L_{i}}}{d_{H_{i}}^{3}-d_{L_{i}}
 \subsubsection{Boundary conditions}
 
 The droplets are described in a 1st order equation whose BC are the liquid fuel mass
-fraction at the channel's exit. Away from the nozzle ("far field") the disperse is assumed to be homogeneous:
+fraction at the channel's exit. Away from the nozzle ("far field") the polydispersity is assumed to be homogeneous:
 \begin{align} 
 m_{d_{i}}=m_{\text{Tot, fuel}} \cdot \begin{cases}
 \delta_{i} \ , & 0 \leq x \leq L \\
@@ -404,14 +405,15 @@ $\Omega_{i j}$ is an influence coefficient. By plugging inside the dimensionless
 \end{align}
 Applying solution on the BC :
 \begin{align} 
-\gamma_{d_{j}}(0)=\sum_{i=j}^{N} \Omega_{i j}=\sum_{i=j}^{N} \delta_{i} \\
+\gamma_{d_{j}}(0)=\sum_{i=j}^{N} \Omega_{i j}= \delta_{j} \\
 % ---------------------------------------------------- %
 \Omega_{j j}=\sum_{i=j}^{N} \delta_{i}-\sum_{i=j+1}^{N} \Omega_{i j}=\gamma_{d_{j}}(0)-\sum_{i=j+1}^{N} \Omega_{i j}\ , \ (j<N) \\
 % ---------------------------------------------------- %
 \Omega_{N N}=\sum_{i=j}^{N} \delta_{i}=\gamma_{d_{N}}(0)
 \end{align}
-The above solution is approximated as continuous, despite the mass fraction being discontinuous (downgrade of droplets = discrete phenomenon). However, the average spray
-injection may contain up to hundred thousands of droplets, such that a joining of a \underline{single} droplet is smaller by few order of magnitudes.
+The above solution is approximated as continuous, despite the mass fraction being discontinuous as droplets may join or leave the $i$-th section (=discrete phenomenon). 
+
+This approximation allows the analytical solution as it presumes that the average spray injection may contain up to hundred thousands of droplets. That way, joining of a \underline{single} droplet from larger section, is negligible, as it is smaller by several order of magnitudes.
 
 To sum up the droplets solution :
 \begin{align} 
@@ -426,7 +428,7 @@ To sum up the droplets solution :
 
 \subsection{The Gaseous Phase Equation}
 
-According to Fick's 1st law for diffusion, the mass flux is linear to its spatial gradient :
+According to Fick's 1st law for diffusion, the mass flux is linear with its spatial gradient :
 \begin{align} 
 \dot{m}_{A}=-D_{A} \nabla \rho_{A}
 \end{align}
@@ -435,7 +437,7 @@ equation in terms of mass fraction will be expressed as :
 \begin{align} 
 U_{0_{A}} \frac{\partial m_{A}}{\partial y}=D_{A}\left(\frac{\partial^{2} m_{A}}{\partial x^{2}}+\frac{\partial^{2} m_{A}}{\partial y^{2}}\right)+S_{A}
 \end{align}
-That equation is valid for both gaseous fuel and oxidizer where $S_{A}$ is a sink / source of element $A$ in terms of rate. Assuming equal diffusion coefficients and equal velocities for both gaseous fuel and oxidizer :
+This equation is valid for both gaseous fuel and oxidizer where $S_{A}$ is a sink / source of element $A$ in terms of rate. Assuming equal diffusion coefficients and equal velocities for both gaseous fuel and oxidizer :
 \begin{align} 
 \text { Fuel : } \ U_{0_{g}} \frac{\partial m_{g, \text { fuel }}}{\partial y}=D_{g} \Big( \frac{\partial^{2} m_{g, \text { fuel }}}{\partial x^{2}}+\frac{\partial^{2} m_{g, \text { \text{fuel} }}}{\partial y^{2}} \Big)+S_{g, \text { fuel-reac }}+S_{d, \text { fuel }} \label{3_fuel} \\
 % ------------------------------------------------------------------------------------ %
@@ -445,20 +447,18 @@ Using Schwab-Zeldovich (S-Z) transformation will help us uniting both equations 
 \begin{align} 
 m \triangleq m_{\text{g, fuel}}-m_{O_{2}} / \nu
 \end{align}
-Where the stoichiometric ratio $(\nu)$ is originated at :
-
+Where the stoichiometric ratio $(\nu)$ is originated at : \\ \vspace{3mm}
 \hspace{45mm} Fuel \ + \ $\underline{\nu}$ Oxygen \ $\rightarrow$ \ Heat \ + \ Products 
 
 And the reactant elements are active only at the reaction zone such that :
 \begin{align} 
 S_{g, \text { fuel-reac }}=S_{O_{2}, \text{ fuel-reac }} / \nu
 \end{align}
-So by implementing the transform : (\ref{3_fuel})\,-\,(\ref{3_oxidizer}) / $v$ ; we can get rid of the reactants :
+So by implementing the transform : (\ref{3_fuel})\,-\,(\ref{3_oxidizer}) / $v$  we can get rid of the reactants and the nonlinear reaction rate term :
 \begin{align}
 U_{0_g} \frac{\partial m}{\partial y}=D_{g} \Big( \frac{\partial^{2} m}{\partial x^{2}}+\frac{\partial^{2} m}{\partial y^{2}} \Big)+S_{d}
 \end{align}
-Where $S_{d}$ is a source element expressing the evaporation rate of the droplets and their
-joining to the gaseous phase. Using this we can portray the flame shape for solving $\underline{m=0}$ .
+$S_{d}$ is the source element expressing the droplets evaporation rate and their contribution to the gaseous phase. Using this we can find the flame shape by solving for $\underline{m=0}$ .
 \newpage
 
 % ---------------------------------------------------------------------------- %
@@ -490,7 +490,7 @@ m_{ \text{Tot, fuel}}\left(1-\sum_{i=1}^{N} \delta_{i}\right) & , \quad 0 \leq x
 \end{align} 
 Applying the following assumptions :
 \begin{align} 
-\underbrace{\frac{\partial m}{\partial x}}_{\text {Symmetry }}\bigg|_{x=0} ^{y \geq 0}=0 \quad \underbrace{\frac{\partial m}{\partial x}}_{  \underset{\text {channel}}{\text{Impenetrable}}} \bigg|_{x=R} ^{y \geq 0}= 0 \quad \underbrace{\frac{\partial m}{\partial x}}_{  \underset{\text {equilibrium}}{\text{Thermodynmic}}} \bigg|_{0 \leq x \leq R} ^{y \rightarrow \infty}=0
+\underbrace{\frac{\partial m}{\partial x}}_{\text {Symmetry }}\bigg|_{x=0} ^{y \geq 0}=0 \quad \underbrace{\frac{\partial m}{\partial x}}_{  \underset{\text {channel}}{\text{Impenetrable}}} \bigg|_{x=R} ^{y \geq 0}= 0 \quad \underbrace{\frac{\partial m}{\partial y}}_{  \underset{\text {equilibrium}}{\text{Thermodynmic}}} \bigg|_{0 \leq x \leq R} ^{y \rightarrow \infty}=0
 \end{align} 
 Axes normalization is similar as before $(2.14),$ but we'll add :
 \begin{align} 
@@ -694,7 +694,7 @@ The BC at the channel's exit includes a thermal diffusive flux element. The temp
 \end{align}
 Applying the following assumptions :
 \begin{align}
-\underbrace{\frac{\partial \hat{T}}{\partial x}}_{\text {Symmetry }} \bigg|_{x=0} ^{y \geq 0}=0 \tab \underbrace{\frac{\partial \hat{T}}{\partial x}}_{  \underset{\text {walls}}{\text{Insulated}} } \bigg|_{x=R}^{y \geq 0}= 0 \tab \underbrace{\frac{\partial \hat{T}}{\partial x}}_{  \underset{\text {equilibrium}}{\text{Thermodynamic}} }\bigg|_{0 \leq x \leq R}^{y \rightarrow \infty}=0
+\underbrace{\frac{\partial \hat{T}}{\partial x}}_{\text {Symmetry }} \bigg|_{x=0} ^{y \geq 0}=0 \tab \underbrace{\frac{\partial \hat{T}}{\partial x}}_{  \underset{\text {walls}}{\text{Insulated}} } \bigg|_{x=R}^{y \geq 0}= 0 \tab \underbrace{\frac{\partial \hat{T}}{\partial y}}_{  \underset{\text {equilibrium}}{\text{Thermodynamic}} }\bigg|_{0 \leq x \leq R}^{y \rightarrow \infty}=0
 \end{align}
 Axes normalization is according to (\ref{2_axes_norm}) and we'll normalize the reference temperature $\left(\hat{T}_{ref}\right)$ and the injected fluid $\left(\hat{T}_{0}\right)$ temperature :
 \begin{align}
@@ -897,7 +897,7 @@ In this scenario, executions $i= [1 \, , \, 9]$ are polysectionals composed of r
 \centering
 \includegraphics[width=1.15\linewidth, center]{p_dist_poly.png}
 \end{figure}
-Mind the typical differences between the \underline{monosectional} iDSD and the \underline{polysectional}.
+Note the typical differences between the \underline{monosectional} iDSD and the \underline{polysectional}.
 
 We can see an interesting pattern that characterizes all of the cases :
 \begin{figure}[H] 
@@ -1129,7 +1129,7 @@ However, in order to fit with the algorithm requirements, it must fulfill two co
 
 \quad (i) \ $\sum_i \delta_i \leq 0.7$ - the sum of liquid fuel can be at most 0.7 (at all sections) 
 
-\quad (ii) $\bar{E}=\text{const.}$ \,- the evaporation rate must be constant at a time
+\quad (ii) $\bar{E}=\text{const.}$ \,- the evaporation rate must be constant with time
 
 Thereby, the algorithm will be free to compute the optimal iDSD in return. 
 
@@ -1229,9 +1229,9 @@ The DoF number was found as an important player in the optimization game, as hig
  
 \subsection{Péclet Number}
 In this part I would like to examine the Péclet number influence on a given optimal iDSD, which so far was determined by default as $Pe = 10$ . \\ \vspace{3mm}
-\hspace{12mm} \ What is the Péclet Number ? [ \href{https://catatanstudi.files.wordpress.com/2010/02/numerical-heat-transfer-and-fluid-flow.pdf}{Patankar $\&$ Suhas} ]
+\hspace{12mm} \ What is the Péclet Number ?
 
-A class of dimensionless numbers relevant in the study of transport phenomena that denotes the ratio of the advection rate by the diffusion rate driven by an appropriate gradient. In the context of mass transfer, the Péclet number is the product of the \textit{Reynolds} number and the \textit{Schmidt} number :
+A class of dimensionless numbers relevant in the study of transport phenomena that denotes the ratio of the advection rate by the diffusion rate driven by an appropriate gradient  [\ref{HT}]. In the context of mass transfer, the Péclet number is the product of the \textit{Reynolds} number and the \textit{Schmidt} number :
 \begin{align*}
 Pe_R = Re_R \, Sc = \frac{U_{0_g} R}{D_g}
 \end{align*}
@@ -1332,14 +1332,14 @@ The first figure exhibited a general solution space of $T_{max}$ where some $\ba
 
 Also here I will make use of the same explanation as brought \hyperref[opt_question]{before}, regarding the optimal combinations satisfying $\bar{E} > \bar{E}_{rev.}$ , where higher $Pe$ number \underline{benefits} with \,$T_{max}$ . 
 
-As an auxiliary argument, I would like to utilize the following reference from the thesis, presenting the extinction maps that describe the flame's sensitivity to the iDSD and $Pe$ : \vspace{4mm}
+As an auxiliary argument, consider the following reference from the thesis (p. 117) [\ref{ga33}], presenting the extinction maps that describe the flame's sensitivity to the iDSD and $Pe$ : \vspace{4mm}
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=1.2 \linewidth, center]{extinction.png}
 \end{figure}
 
-Without diving into the development of \href{https://www.sciencedirect.com/science/article/abs/pii/0094576574900666}{Liñán}'s diffusion flame theory, and without loss of generality, we can \underline{carefully} say that higher $Pe$ numbers reduce the extinction regions. 
+Without deep diving into Liñán's diffusion flame theory [\ref{linan}], and without loss of generality, we can \underline{carefully} say that higher $Pe$ numbers reduce the extinction regions. 
 
 Equivalently, that is to say that higher $Pe$ numbers expand the existence regions of the flame itself. Note that this example's iDSD is arbitrary but it still provides a useful qualitative information that supports my findings. 
 
@@ -1409,7 +1409,7 @@ Along my working process I happened to think through several directions for futu
 
 \quad $\circ$ \ \underline{Technically} - Do the number of sections (9 by default) have any influence upon the \\ \hspace{8mm} results ? Would more sections necessarily lead to a more continuous results space ?
 
-\quad $\circ$ \ \underline{Complexity Analysis} - Long and costly computation process can be analyzed, in order  \\ \hspace{8mm} to point on bottlenecks and to make the algorithm more efficient.
+\quad $\circ$ \ \underline{Complexity Analysis} - Long and costly computation process can be analyzed, in order  \\ \hspace{8mm} to point to bottlenecks and to make the algorithm more efficient.
 
 \quad $\circ$ \ \underline{More approaches} - Nowadays, the GA main competitor is the AI's top notch approach,  \\ \hspace{8mm} the Reinforcement Learning. In this approach, an agent in a given environment (input  \\ \hspace{8mm} setup), reflects the user interest to optimize a certain value function. The agent  \\ \hspace{8mm} improves his actions due to external rewards with respect to his actions. Over time he \\ \hspace{8mm} attempts to arrive at an optimal state, namely a set of actions that reward him most, \\ \hspace{8mm} thereby guaranteeing optimality.
 
@@ -1419,12 +1419,11 @@ Along my working process I happened to think through several directions for futu
 \begin{thebibliography}{9} \addcontentsline{toc}{section}{References}
 
 \bibitem{c6} \label{c6}
-Hans-Georg Beyer (2001) : The Theory of Evolution Strategies: Springer April 27, 2001
+Beyer, H. G. (2001). The theory of evolution strategies. \href{https://www.springer.com/gp/book/9783540672975}{Springer Science}
 
 
 \bibitem{c_optima} \label{c_optima}
-Paul mcgregor (2006), Relative Minimums and Maximums, Calculus III, 
-\href{https://tutorial.math.lamar.edu/Classes/CalcIII/RelativeExtrema.aspx}{Lamar University, Texas}
+Paul mcgregor (2006). Relative Minimums and Maximums, \href{https://tutorial.math.lamar.edu/Classes/CalcIII/RelativeExtrema.aspx}{Calculus III course}, Lamar University, Texas
 
 
 \bibitem{c7} \label{c7}
@@ -1433,28 +1432,32 @@ Darrell Whitley (1994). A genetic algorithm tutorial. Computer Science Departmen
 
 \bibitem{ga0} \label{ga0}
 Runhe Huang (1995). Evolving Prototype Rules and Genetic algorithm
-in a Combustion Control. \href{https://ieeexplore.ieee.org/document/465834?section=abstract}{1995 IEEE-IAS International Conference on Industrial Automation and Control Conference.}
+in a Combustion Control. \href{https://ieeexplore.ieee.org/document/465834?section=abstract}{1995 IEEE-IAS}, International Conference on Industrial Automation and Control Conference.
 
 
 \bibitem{ga1} \label{ga1}
-B. Danielson J. $\&$ Foster D. Frincke (1998). Using Genetic Algorithms to Breed a Combustion Engine. \href{https://ieeexplore.ieee.org/document/699722}{IEEE World Congress on Computational Intelligence, 1998, Anchorage, Alaska, USA}
+B. Danielson J. $\&$ Foster D. Frincke (1998). Using Genetic Algorithms to Breed a Combustion Engine. \href{https://ieeexplore.ieee.org/document/699722}{IEEE World Congress} on Computational Intelligence, 1998, Anchorage, Alaska, USA
 
 
 \bibitem{ga2} \label{ga2}
 Wolfgana Polifke, Weiqun Geng $\&$ Klaus Dobbeling (1998). Optimization of Rate Coefficients for Simplified Reaction
-Mechanisms with Genetic Algorithms. \href{https://www.sciencedirect.com/science/article/abs/pii/S0010218097002125}{Combustion and Flame, 113(1/2), 119–134.}
+Mechanisms with Genetic Algorithms. \href{https://www.sciencedirect.com/science/article/abs/pii/S0010218097002125}{Combustion and Flame}, 113(1/2), 119–134.
 
 
 \bibitem{f11} \label{f11} 
-S.D. Harris, Elliott, L., Ingham, D. B., M. Pourkashanian $\&$ C. W. Wilson, (2000). The optimisation of reaction rate parameters for chemical kinetic modelling using genetic algorithms. \href{https://asmedigitalcollection.asme.org/GT/proceedings-abstract/GT2002/36061/563/295726}{In ASME Turbo Expo 2002: Power for Land, Sea, and Air (pp. 563-572).}
+S.D. Harris, Elliott, L., Ingham, D. B., M. Pourkashanian $\&$ C. W. Wilson, (2000). The optimisation of reaction rate parameters for chemical kinetic modelling using genetic algorithms. In ASME Turbo Expo 2002: \href{https://asmedigitalcollection.asme.org/GT/proceedings-abstract/GT2002/36061/563/295726}{Power for Land, Sea, and Air} (pp. 563-572).
 
 
-\bibitem{ga8} \label{ga8}
-G. R. Vossoughi $\&$ Siavash Rezazadeh (2005). Optimization of the Calibration for an Internal Combustion Engine Management System Using Multi-Objective Genetic Algorithms. \href{https://www.researchgate.net/publication/4201526_Optimization_of_the_calibration_for_an_internal_combustion_engine_management_system_using_multi-objective_genetic_algorithms}{Evolutionary Computation, 2005. The 2005 IEEE Congress on, Volume: 2}
+\bibitem{f12} \label{f12}
+G. R. Vossoughi $\&$ Siavash Rezazadeh (2005). Optimization of the Calibration for an Internal Combustion Engine Management System Using Multi-Objective Genetic Algorithms. Evolutionary Computation, 2005. \href{https://www.researchgate.net/publication/4201526_Optimization_of_the_calibration_for_an_internal_combustion_engine_management_system_using_multi-objective_genetic_algorithms}{The 2005 IEEE Congress} on, Volume: 2
 
 
 \bibitem{ga3} \label{ga3}
-C. D. Rose, S. R. Marsland $\&$ D. Law (2009). Optimisation of the Gas-Exchange System of Combustion Engines by Genetic Algorithm. \href{https://ieeexplore.ieee.org/document/4804021}{2009 4th International Conference on Autonomous Robots and Agents.}
+C. D. Rose, S. R. Marsland $\&$ D. Law (2009). Optimisation of the Gas-Exchange System of Combustion Engines by Genetic Algorithm. \href{https://ieeexplore.ieee.org/document/4804021}{2009 4th International Conference} on Autonomous Robots and Agents.
+
+
+\bibitem{ga33} \label{ga33}
+Shtauber, I. \& Greenberg, J.B. (2010), A study of Polydisperse Spray Diffusion Flames and their Extinction in Co-flow. \href{http://www.graduate.technion.ac.il/Theses/Abstracts.asp?Id=24930}{Final Paper towards M.Sc in Aerospace Engineering}
 
 
 \bibitem{f1} \label{f1}
@@ -1467,7 +1470,7 @@ transition-to-detonation: genetic algorithm and optimisation procedure. \href{ht
 
 
 \bibitem{ga4} \label{ga4}
-Hongguang Pan, Weimin Zhong, Zaiying Wanga $\&$ Guoxin Wanga (2017). Optimization of industrial boiler combustion control system based on genetic algorithm. \href{https://www.sciencedirect.com/science/article/pii/S0045790617325302?via%3Dihub}{Computers and Electrical Engineering 70 (2018) 987–997}
+Hongguang Pan, Weimin Zhong, Zaiying Wanga $\&$ Guoxin Wanga (2017). Optimization of industrial boiler combustion control system based on genetic algorithm. \href{https://www.sciencedirect.com/science/article/pii/S0045790617325302?via%3Dihub}{Computers and Electrical Engineering} 70 (2018) 987–997
 
 
 \bibitem{ga5} \label{ga5}
@@ -1475,11 +1478,24 @@ Jie Liua,b, Biao Maa $\&$ Hongbo Zhaoa (2019). Combustion parameters optimizatio
 
 
 \bibitem{ga7} \label{ga7}
-Yiding Zhao, Qinghe Wu, Heng Li, Shuhua Ma $\&$ Ping He (2019). Optimization of Thermal Efficiency and Unburned Carbon in Fly Ash of Coal-Fired Utility Boiler via Grey Wolf Optimizer Algorithm. \href{https://ieeexplore.ieee.org/document/4804021}{2010 International Conference on Electrical and Control Engineering}
+Yiding Zhao, Qinghe Wu, Heng Li, Shuhua Ma $\&$ Ping He (2019). Optimization of Thermal Efficiency and Unburned Carbon in Fly Ash of Coal-Fired Utility Boiler via Grey Wolf Optimizer Algorithm. \href{https://ieeexplore.ieee.org/document/4804021}{2010 International Conference} on Electrical and Control Engineering
+
+\bibitem{ga8} \label{ga8}
+Burke, S. P., and T. E. W. Schumann. "Diffusion flames." \href{https://pubs.acs.org/doi/pdf/10.1021/ie50226a005}{Industrial \& Engineering Chemistry} 20.10 (1928): 998-1004.
 
 
-\bibitem{ga7} \label{greenb}
+\bibitem{ga9} \label{ga9}
 Greenberg, J.B., "The Burke-Schumann Diffusion Flame Revisited-With Fuel Spray Injection", \href{https://www.sciencedirect.com/science/article/abs/pii/0010218089901314}{Combustion and Flame} 77, pp. 229-240, (1989).
+
+
+\bibitem{ga10} \label{ga10}
+Tambour, Y., A Lagrangian Sectional Approach for Simulating Droplet Size Distribution of Vaporizing Fuel Sprays in a Turbulent Jet, \href{https://www.sciencedirect.com/science/article/abs/pii/0010218085901154}{Combustion and Flame} 61 Issue 1, pp. 15-28,
+(1985).
+
+
+\bibitem{ga11} \label{ga11}
+Williams, F.A., Phys. Fluids 1, pp. 541-545, (1958). See also "\href{https://www.routledge.com/Combustion-Theory/Williams/p/book/9780201407778}{Combustion Theory}", 2nd
+Edition, The Benjamin/Cummings Publishing: Menlo Park, CA, (1985)
 
 
 \bibitem{c1} \label{c1}
@@ -1491,21 +1507,28 @@ V. Jeyakumar; Alexander M. Rubinov (9 March 2006). Continuous Optimization: Curr
 \href{https://books.google.co.il/books?id=QePsbLIwwEoC&printsec=frontcover&dq=%22Continuous+optimization%22&hl=en&sa=X&redir_esc=y#v=onepage&q=%22Continuous%20optimization%22&f=false}{Continuous Optimization}
 
 
-\bibitem{MILP_1}  \label{MILP_1}
+\bibitem{MILP_1} \label{MILP_1}
 Javier Larrosa, Albert Oliveras, Enric Rodrıguez-Carbonell (2019), Combinatorial Problem Solving (CPS). 
 \href{https://www.cs.upc.edu/~erodri/webpage/cps/theory/lp/milp/slides.pdf}{Mixed Integer Linear Programming}
 
 
-\bibitem{MILP_2}  \label{MILP_2}
-Sakawa M. (2002) Genetic Algorithms for Integer Programming. In: Genetic Algorithms and Fuzzy Multiobjective Optimization. Operations Research/Computer Science Interfaces Series, vol 14. Springer, Boston, MA. 
-\href{https://link.springer.com/chapter/10.1007/978-1-4615-1519-7_5}{Genetic Algorithms for Integer Programming}
+\bibitem{MILP_2} \label{MILP_2}
+Sakawa M. (2002) Genetic Algorithms for Integer Programming. In: Genetic Algorithms and Fuzzy Multiobjective Optimization. \href{https://link.springer.com/chapter/10.1007/978-1-4615-1519-7_5}{Operations Research} / Computer Science Interfaces Series, vol 14. Springer, Boston, MA. 
 
 
 \bibitem{matlab_problem} \label{matlab_problem}
-Solving Mixed Integer GA Optimization Problems - \href{https://www.mathworks.com/help/gads/mixed-integer-optimization.html#bs1clc2}{Matlab explanation}
+Matlab Help Center, Solving Mixed Integer GA Optimization Problems [\href{https://www.mathworks.com/help/gads/mixed-integer-optimization.html#bs1clc2}{link}]. Based on Deb, K. (2000). An efficient constraint handling method for genetic algorithms. Computer methods in applied mechanics and engineering, 186(2-4), 311-338 [\href{https://www.sciencedirect.com/science/article/pii/S0045782599003898}{link}].
+
 
 \bibitem{noise} \label{noise}
-Darrel Whitley (1997), \href{https://web.archive.org/web/20130615042000/http://samizdat.mines.edu/ga_tutorial/ga_tutorial.ps}{A Genetic Algorithm Tutorial}, Computer Science Department, Colorado State University, Fort Collins.
+Darrel Whitley (1997), A Genetic Algorithm Tutorial, Computer Science Department, Colorado State University, \href{https://web.archive.org/web/20130615042000/http://samizdat.mines.edu/ga_tutorial/ga_tutorial.ps}{Fort Collins}.
+
+
+\bibitem{HT} \label{HT}
+Patankar, S. (2018). Numerical heat transfer and fluid flow. \href{https://catatanstudi.files.wordpress.com/2010/02/numerical-heat-transfer-and-fluid-flow.pdf}{Taylor \& Francis}
+
+\bibitem{linan} \label{linan}
+Linan, A. (1974). The asymptotic structure of counterflow diffusion flames for large activation energies. \href{https://www.sciencedirect.com/science/article/abs/pii/0094576574900666}{Acta Astronautica}, 1(7-8), 1007-1039.
 
 
 \end{thebibliography}
