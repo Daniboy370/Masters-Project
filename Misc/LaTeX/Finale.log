@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.6.18)  10 JUL 2020 12:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.6.18)  21 JUL 2020 11:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1022,11 +1022,7 @@ File: english.lbx 2017/12/19 v3.10 biblatex localization (PK/JW/AB)
 \@quotelevel=\count321
 \@quotereset=\count322
 
-(./Finale.aux
-
-LaTeX Warning: Label `ga7' multiply defined.
-
-)
+(./Finale.aux)
 \openout1 = `Finale.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
@@ -1174,48 +1170,48 @@ l.71 \newpage
 ame{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.98 \newpage
+l.94 \newpage
               [1] [2] [3]
 <Images/q_10.png, id=257, 1324.95pt x 406.51875pt>
 File: Images/q_10.png Graphic file (type png)
 <use Images/q_10.png>
-Package pdftex.def Info: Images/q_10.png  used on input line 192.
+Package pdftex.def Info: Images/q_10.png  used on input line 189.
 (pdftex.def)             Requested size: 384.22566pt x 117.8874pt.
 <Images/q_11.png, id=258, 1046.91125pt x 163.61125pt>
 File: Images/q_11.png Graphic file (type png)
 <use Images/q_11.png>
-Package pdftex.def Info: Images/q_11.png  used on input line 197.
+Package pdftex.def Info: Images/q_11.png  used on input line 194.
 (pdftex.def)             Requested size: 392.59076pt x 61.35406pt.
  [4 <./Images/q_10.png> <./Images/q_11.png>]
 <Images/performance.png, id=269, 1061.9675pt x 264.99pt>
 File: Images/performance.png Graphic file (type png)
 <use Images/performance.png>
-Package pdftex.def Info: Images/performance.png  used on input line 207.
+Package pdftex.def Info: Images/performance.png  used on input line 205.
 (pdftex.def)             Requested size: 530.82545pt x 132.45828pt.
  [5 <./Images/performance.png>]
-<Images/graph_3D.png, id=281, 999.735pt x 520.94624pt>
+<Images/graph_3D.png, id=283, 999.735pt x 520.94624pt>
 File: Images/graph_3D.png Graphic file (type png)
 <use Images/graph_3D.png>
-Package pdftex.def Info: Images/graph_3D.png  used on input line 226.
+Package pdftex.def Info: Images/graph_3D.png  used on input line 224.
 (pdftex.def)             Requested size: 422.77664pt x 220.2983pt.
  [6 <./Images/graph_3D.png>]
-<Images/engine.png, id=296, 1110.1475pt x 445.665pt>
+<Images/engine.png, id=297, 1110.1475pt x 445.665pt>
 File: Images/engine.png Graphic file (type png)
 <use Images/engine.png>
-Package pdftex.def Info: Images/engine.png  used on input line 242.
+Package pdftex.def Info: Images/engine.png  used on input line 240.
 (pdftex.def)             Requested size: 429.82268pt x 172.5506pt.
  [7 <./Images/engine.png>]
-<Images/GA_1.png, id=317, 1561.835pt x 649.42625pt>
+<Images/GA_1.png, id=319, 1561.835pt x 649.42625pt>
 File: Images/GA_1.png Graphic file (type png)
 <use Images/GA_1.png>
-Package pdftex.def Info: Images/GA_1.png  used on input line 257.
+Package pdftex.def Info: Images/GA_1.png  used on input line 258.
 (pdftex.def)             Requested size: 488.54205pt x 203.13348pt.
 
 [8 <./Images/GA_1.png>] [9]
-<Images/model_schema.png, id=334, 527.9725pt x 541.02126pt>
+<Images/model_schema.png, id=338, 527.9725pt x 541.02126pt>
 File: Images/model_schema.png Graphic file (type png)
 <use Images/model_schema.png>
-Package pdftex.def Info: Images/model_schema.png  used on input line 296.
+Package pdftex.def Info: Images/model_schema.png  used on input line 297.
 (pdftex.def)             Requested size: 224.38937pt x 229.93512pt.
  [10 <./Images/model_schema.png>] [11] [12] [13]
 [14] [15] [16] [17] [18]
@@ -1230,74 +1226,74 @@ Overfull \hbox (4.83513pt too wide) detected at line 670
  []
 
 [21] [22] [23] [24] [25] [26]
-<Images/T_field.png, id=568, 883.3pt x 500.87125pt>
+<Images/T_field.png, id=577, 883.3pt x 500.87125pt>
 File: Images/T_field.png Graphic file (type png)
 <use Images/T_field.png>
 Package pdftex.def Info: Images/T_field.png  used on input line 851.
 (pdftex.def)             Requested size: 455.66293pt x 258.38338pt.
  [27 <./Images/T_field.png>]
-<Images/T_field_raw.png, id=575, 930.47626pt x 458.71375pt>
+<Images/T_field_raw.png, id=584, 930.47626pt x 458.71375pt>
 File: Images/T_field_raw.png Graphic file (type png)
 <use Images/T_field_raw.png>
 Package pdftex.def Info: Images/T_field_raw.png  used on input line 866.
 (pdftex.def)             Requested size: 469.75502pt x 231.58212pt.
  [28 <./Images/T_field_raw.png>]
-<Images/p_dist_mono_0.png, id=584, 1172.38pt x 500.87125pt>
+<Images/p_dist_mono_0.png, id=593, 1172.38pt x 500.87125pt>
 File: Images/p_dist_mono_0.png Graphic file (type png)
 <use Images/p_dist_mono_0.png>
 Package pdftex.def Info: Images/p_dist_mono_0.png  used on input line 883.
 (pdftex.def)             Requested size: 551.96358pt x 235.80693pt.
-<Images/p_comb_poly.png, id=585, 749.80125pt x 490.83376pt>
+<Images/p_comb_poly.png, id=594, 749.80125pt x 490.83376pt>
 File: Images/p_comb_poly.png Graphic file (type png)
 <use Images/p_comb_poly.png>
 Package pdftex.def Info: Images/p_comb_poly.png  used on input line 893.
 (pdftex.def)             Requested size: 349.9652pt x 229.09662pt.
  [29 <./Images/p_dist_mono_0.png>]
-<Images/p_dist_poly.png, id=592, 1180.41pt x 489.83pt>
+<Images/p_dist_poly.png, id=601, 1180.41pt x 489.83pt>
 File: Images/p_dist_poly.png Graphic file (type png)
 <use Images/p_dist_poly.png>
 Package pdftex.def Info: Images/p_dist_poly.png  used on input line 898.
 (pdftex.def)             Requested size: 540.2154pt x 224.17351pt.
-<Images/p_dist_mid.png, id=593, 914.41624pt x 480.79625pt>
+<Images/p_dist_mid.png, id=602, 914.41624pt x 480.79625pt>
 File: Images/p_dist_mid.png Graphic file (type png)
 <use Images/p_dist_mid.png>
 Package pdftex.def Info: Images/p_dist_mid.png  used on input line 905.
 (pdftex.def)             Requested size: 458.014pt x 240.82303pt.
  [30 <./Images/p_comb_poly.png> <./Images/p_dist_poly.png>]
-<Images/T_max_full_a.png, id=602, 1216.545pt x 633.36626pt>
+<Images/T_max_full_a.png, id=611, 1216.545pt x 633.36626pt>
 File: Images/T_max_full_a.png Graphic file (type png)
 <use Images/T_max_full_a.png>
 Package pdftex.def Info: Images/T_max_full_a.png  used on input line 933.
 (pdftex.def)             Requested size: 516.73338pt x 269.0273pt.
  [31 <./Images/p_dist_mid.png>]
-<Images/T_max_full_b.png, id=612, 1076.02pt x 431.6125pt>
+<Images/T_max_full_b.png, id=621, 1076.02pt x 431.6125pt>
 File: Images/T_max_full_b.png Graphic file (type png)
 <use Images/T_max_full_b.png>
 Package pdftex.def Info: Images/T_max_full_b.png  used on input line 939.
 (pdftex.def)             Requested size: 516.73338pt x 207.27043pt.
-<Images/T_max_full_d.png, id=613, 1203.49625pt x 638.385pt>
+<Images/T_max_full_d.png, id=622, 1203.49625pt x 638.385pt>
 File: Images/T_max_full_d.png Graphic file (type png)
 <use Images/T_max_full_d.png>
 Package pdftex.def Info: Images/T_max_full_d.png  used on input line 947.
 (pdftex.def)             Requested size: 488.54205pt x 259.14844pt.
  [32 <./Images/T_max_full_a.png> <./Images/T_max_full_b.png>]
-<Images/T_max_full_e.png, id=622, 1103.12125pt x 493.845pt>
+<Images/T_max_full_e.png, id=631, 1103.12125pt x 493.845pt>
 File: Images/T_max_full_e.png Graphic file (type png)
 <use Images/T_max_full_e.png>
 Package pdftex.def Info: Images/T_max_full_e.png  used on input line 952.
 (pdftex.def)             Requested size: 488.54205pt x 218.70912pt.
  [33 <./Images/T_max_full_d.png> <./Images/T_max_full_e.png>]
-<Images/assymptote_eta.png, id=633, 523.9575pt x 351.3125pt>
+<Images/assymptote_eta.png, id=642, 523.9575pt x 351.3125pt>
 File: Images/assymptote_eta.png Graphic file (type png)
 <use Images/assymptote_eta.png>
 Package pdftex.def Info: Images/assymptote_eta.png  used on input line 961.
 (pdftex.def)             Requested size: 281.85587pt x 188.9876pt.
-<Images/assymptote_temp_a.png, id=634, 966.61125pt x 513.92pt>
+<Images/assymptote_temp_a.png, id=643, 966.61125pt x 513.92pt>
 File: Images/assymptote_temp_a.png Graphic file (type png)
 <use Images/assymptote_temp_a.png>
 Package pdftex.def Info: Images/assymptote_temp_a.png  used on input line 967.
 (pdftex.def)             Requested size: 375.80544pt x 199.80064pt.
-<Images/p_dist_mono_explanation.png, id=635, 948.54375pt x 456.70625pt>
+<Images/p_dist_mono_explanation.png, id=644, 948.54375pt x 456.70625pt>
 File: Images/p_dist_mono_explanation.png Graphic file (type png)
 <use Images/p_dist_mono_explanation.png>
 Package pdftex.def Info: Images/p_dist_mono_explanation.png  used on input line
@@ -1305,135 +1301,135 @@ Package pdftex.def Info: Images/p_dist_mono_explanation.png  used on input line
 (pdftex.def)             Requested size: 469.75502pt x 226.1783pt.
  [34 <./Images/assymptote_eta.png> <./Images/assymptote_temp_a.png>] [35 <./Ima
 ges/p_dist_mono_explanation.png>] [36] [37]
-<Images/Matlab_func_a.png, id=682, 639.38875pt x 168.63pt>
+<Images/Matlab_func_a.png, id=691, 639.38875pt x 168.63pt>
 File: Images/Matlab_func_a.png Graphic file (type png)
 <use Images/Matlab_func_a.png>
 Package pdftex.def Info: Images/Matlab_func_a.png  used on input line 1094.
 (pdftex.def)             Requested size: 411.03563pt x 108.40656pt.
-<Images/Table_example.png, id=683, 779.91376pt x 100.375pt>
+<Images/Table_example.png, id=692, 779.91376pt x 100.375pt>
 File: Images/Table_example.png Graphic file (type png)
 <use Images/Table_example.png>
 Package pdftex.def Info: Images/Table_example.png  used on input line 1109.
 (pdftex.def)             Requested size: 352.31625pt x 45.34293pt.
  [38 <./Images/Matlab_func_a.png>]
-<Images/Optimization_2.png, id=690, 928.46875pt x 539.01375pt>
+<Images/Optimization_2.png, id=699, 928.46875pt x 539.01375pt>
 File: Images/Optimization_2.png Graphic file (type png)
 <use Images/Optimization_2.png>
 Package pdftex.def Info: Images/Optimization_2.png  used on input line 1117.
 (pdftex.def)             Requested size: 469.75502pt x 272.71382pt.
  [39 <./Images/Table_example.png> <./Images/Optimization_2.png>]
-<Images/eta_07_a.png, id=699, 361.35pt x 217.81375pt>
+<Images/eta_07_a.png, id=709, 361.35pt x 217.81375pt>
 File: Images/eta_07_a.png Graphic file (type png)
 <use Images/eta_07_a.png>
 Package pdftex.def Info: Images/eta_07_a.png  used on input line 1145.
 (pdftex.def)             Requested size: 159.71498pt x 96.27373pt.
  [40 <./Images/eta_07_a.png>]
-<Images/eta_07_b.png, id=708, 919.435pt x 1172.38pt>
+<Images/eta_07_b.png, id=718, 919.435pt x 1172.38pt>
 File: Images/eta_07_b.png Graphic file (type png)
 <use Images/eta_07_b.png>
 Package pdftex.def Info: Images/eta_07_b.png  used on input line 1153.
 (pdftex.def)             Requested size: 422.77664pt x 539.08669pt.
  [41 <./Images/eta_07_b.png>]
-<Images/eta_07_c.png, id=715, 1486.55376pt x 1183.42125pt>
+<Images/eta_07_c.png, id=725, 1486.55376pt x 1183.42125pt>
 File: Images/eta_07_c.png Graphic file (type png)
 <use Images/eta_07_c.png>
 Package pdftex.def Info: Images/eta_07_c.png  used on input line 1161.
 (pdftex.def)             Requested size: 540.2154pt x 430.05815pt.
-<Images/eta_max_table.png, id=716, 949.5475pt x 495.8525pt>
+<Images/eta_max_table.png, id=726, 949.5475pt x 495.8525pt>
 File: Images/eta_max_table.png Graphic file (type png)
 <use Images/eta_max_table.png>
 Package pdftex.def Info: Images/eta_max_table.png  used on input line 1172.
 (pdftex.def)             Requested size: 469.75502pt x 245.30777pt.
  [42 <./Images/eta_07_c.png>]
-<Images/T_07_a_true.png, id=723, 337.26pt x 205.76875pt>
+<Images/T_07_a_true.png, id=733, 337.26pt x 205.76875pt>
 File: Images/T_07_a_true.png Graphic file (type png)
 <use Images/T_07_a_true.png>
 Package pdftex.def Info: Images/T_07_a_true.png  used on input line 1182.
 (pdftex.def)             Requested size: 159.71498pt x 97.44601pt.
  [43 <./Images/eta_max_table.png> <./Images/T_07_a_true.png>]
-<Images/T_07_b_true.png, id=732, 651.43375pt x 841.1425pt>
+<Images/T_07_b_true.png, id=742, 651.43375pt x 841.1425pt>
 File: Images/T_07_b_true.png Graphic file (type png)
 <use Images/T_07_b_true.png>
 Package pdftex.def Info: Images/T_07_b_true.png  used on input line 1190.
 (pdftex.def)             Requested size: 415.7306pt x 536.81487pt.
 
 [44 <./Images/T_07_b_true.png>]
-<Images/T_07_c_true.png, id=738, 1043.9pt x 841.1425pt>
+<Images/T_07_c_true.png, id=748, 1043.9pt x 841.1425pt>
 File: Images/T_07_c_true.png Graphic file (type png)
 <use Images/T_07_c_true.png>
 Package pdftex.def Info: Images/T_07_c_true.png  used on input line 1197.
 (pdftex.def)             Requested size: 540.2154pt x 435.29172pt.
  [45 <./Images/T_07_c_true.png>]
-<Images/T_max_table_true.png, id=744, 944.52875pt x 507.8975pt>
+<Images/T_max_table_true.png, id=754, 944.52875pt x 507.8975pt>
 File: Images/T_max_table_true.png Graphic file (type png)
 <use Images/T_max_table_true.png>
 Package pdftex.def Info: Images/T_max_table_true.png  used on input line 1209.
 (pdftex.def)             Requested size: 469.75502pt x 252.59966pt.
  [46 <./Images/T_max_table_true.png>]
-<Images/Eta_max_space.png, id=755, 1150.2975pt x 513.92pt>
+<Images/Eta_max_space.png, id=765, 1150.2975pt x 513.92pt>
 File: Images/Eta_max_space.png Graphic file (type png)
 <use Images/Eta_max_space.png>
 Package pdftex.def Info: Images/Eta_max_space.png  used on input line 1253.
 (pdftex.def)             Requested size: 516.73338pt x 230.86977pt.
  [47]
-<Images/eta_d_07_c.png, id=761, 1056.94875pt x 249.93375pt>
+<Images/eta_d_07_c.png, id=772, 1056.94875pt x 249.93375pt>
 File: Images/eta_d_07_c.png Graphic file (type png)
 <use Images/eta_d_07_c.png>
 Package pdftex.def Info: Images/eta_d_07_c.png  used on input line 1266.
 (pdftex.def)             Requested size: 469.75502pt x 111.08096pt.
-<Images/eta_max_Pe_1.png, id=762, 852.18375pt x 499.8675pt>
+<Images/eta_max_Pe_1.png, id=773, 852.18375pt x 499.8675pt>
 File: Images/eta_max_Pe_1.png Graphic file (type png)
 <use Images/eta_max_Pe_1.png>
 Package pdftex.def Info: Images/eta_max_Pe_1.png  used on input line 1272.
 (pdftex.def)             Requested size: 458.014pt x 268.66591pt.
  [48 <./Images/Eta_max_space.png> <./Images/eta_d_07_c.png>]
-<Images/T_max_space_low.png, id=773, 1141.26375pt x 508.90125pt>
+<Images/T_max_space_low.png, id=784, 1141.26375pt x 508.90125pt>
 File: Images/T_max_space_low.png Graphic file (type png)
 <use Images/T_max_space_low.png>
 Package pdftex.def Info: Images/T_max_space_low.png  used on input line 1290.
 (pdftex.def)             Requested size: 493.2442pt x 219.94145pt.
  [49 <./Images/eta_max_Pe_1.png>]
-<Images/T_max_space_high.png, id=780, 1141.26375pt x 508.90125pt>
+<Images/T_max_space_high.png, id=791, 1141.26375pt x 508.90125pt>
 File: Images/T_max_space_high.png Graphic file (type png)
 <use Images/T_max_space_high.png>
 Package pdftex.def Info: Images/T_max_space_high.png  used on input line 1303.
 (pdftex.def)             Requested size: 486.19817pt x 216.79655pt.
-<Images/T_d_07_c.png, id=782, 748.7975pt x 178.6675pt>
+<Images/T_d_07_c.png, id=793, 748.7975pt x 178.6675pt>
 File: Images/T_d_07_c.png Graphic file (type png)
 <use Images/T_d_07_c.png>
 Package pdftex.def Info: Images/T_d_07_c.png  used on input line 1309.
 (pdftex.def)             Requested size: 516.73338pt x 123.3025pt.
  [50 <./Images/T_max_space_low.png> <./Images/T_max_space_high.png>]
-<Images/T_max_Pe_1.png, id=791, 868.24374pt x 497.86pt>
+<Images/T_max_Pe_1.png, id=802, 868.24374pt x 497.86pt>
 File: Images/T_max_Pe_1.png Graphic file (type png)
 <use Images/T_max_Pe_1.png>
 Package pdftex.def Info: Images/T_max_Pe_1.png  used on input line 1314.
 (pdftex.def)             Requested size: 469.75502pt x 269.36456pt.
  [51 <./Images/T_d_07_c.png> <./Images/T_max_Pe_1.png>]
-<Images/extinction.png, id=801, 1516.66624pt x 449.68pt>
+<Images/extinction.png, id=813, 1516.66624pt x 449.68pt>
 File: Images/extinction.png Graphic file (type png)
 <use Images/extinction.png>
 Package pdftex.def Info: Images/extinction.png  used on input line 1339.
 (pdftex.def)             Requested size: 563.70459pt x 167.13376pt.
  [52 <./Images/extinction.png>]
-<Images/multi_combination_1.png, id=810, 695.59875pt x 467.7475pt>
+<Images/multi_combination_1.png, id=822, 695.59875pt x 467.7475pt>
 File: Images/multi_combination_1.png Graphic file (type png)
 <use Images/multi_combination_1.png>
 Package pdftex.def Info: Images/multi_combination_1.png  used on input line 135
 4.
 (pdftex.def)             Requested size: 352.31625pt x 236.9065pt.
  [53 <./Images/multi_combination_1.png>]
-<Images/multi_graph_07a.png, id=817, 789.95125pt x 468.75125pt>
+<Images/multi_graph_07a.png, id=829, 789.95125pt x 468.75125pt>
 File: Images/multi_graph_07a.png Graphic file (type png)
 <use Images/multi_graph_07a.png>
 Package pdftex.def Info: Images/multi_graph_07a.png  used on input line 1367.
 (pdftex.def)             Requested size: 399.29463pt x 236.93565pt.
-<Images/multi_graph_07b.png, id=818, 576.1525pt x 328.22626pt>
+<Images/multi_graph_07b.png, id=830, 576.1525pt x 328.22626pt>
 File: Images/multi_graph_07b.png Graphic file (type png)
 <use Images/multi_graph_07b.png>
 Package pdftex.def Info: Images/multi_graph_07b.png  used on input line 1374.
 (pdftex.def)             Requested size: 295.94795pt x 168.60017pt.
-<Images/multi_graph_full_07.png, id=819, 776.9025pt x 468.75125pt>
+<Images/multi_graph_full_07.png, id=831, 776.9025pt x 468.75125pt>
 File: Images/multi_graph_full_07.png Graphic file (type png)
 <use Images/multi_graph_full_07.png>
 Package pdftex.def Info: Images/multi_graph_full_07.png  used on input line 138
@@ -1441,7 +1437,7 @@ Package pdftex.def Info: Images/multi_graph_full_07.png  used on input line 138
 (pdftex.def)             Requested size: 382.85149pt x 230.99902pt.
 
 [54 <./Images/multi_graph_07a.png> <./Images/multi_graph_07b.png>]
-<Images/multi_graph_bounded_a.png, id=828, 991.705pt x 544.0325pt>
+<Images/multi_graph_bounded_a.png, id=840, 991.705pt x 544.0325pt>
 File: Images/multi_graph_bounded_a.png Graphic file (type png)
 <use Images/multi_graph_bounded_a.png>
 Package pdftex.def Info: Images/multi_graph_bounded_a.png  used on input line 1
@@ -1449,50 +1445,46 @@ Package pdftex.def Info: Images/multi_graph_bounded_a.png  used on input line 1
 (pdftex.def)             Requested size: 411.03563pt x 225.48703pt.
  [55 <./Images/multi_graph_full_07.png> <./Images/multi_graph_bounded_a.png>] [
 56] [57]
-[58]
+[58] [59]
 
 Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 1516.
+(hyperref)                be the same. Added a new anchor on input line 1539.
 
-<Images/3d_graph_0.png, id=879, 1253.68375pt x 470.75874pt>
+<Images/3d_graph_0.png, id=899, 1253.68375pt x 470.75874pt>
 File: Images/3d_graph_0.png Graphic file (type png)
 <use Images/3d_graph_0.png>
-Package pdftex.def Info: Images/3d_graph_0.png  used on input line 1521.
+Package pdftex.def Info: Images/3d_graph_0.png  used on input line 1544.
 (pdftex.def)             Requested size: 458.014pt x 171.98714pt.
-<Images/n_dimensional.png, id=882, 1064.97874pt x 985.6825pt>
+<Images/n_dimensional.png, id=902, 1064.97874pt x 985.6825pt>
 File: Images/n_dimensional.png Graphic file (type png)
 <use Images/n_dimensional.png>
-Package pdftex.def Info: Images/n_dimensional.png  used on input line 1545.
+Package pdftex.def Info: Images/n_dimensional.png  used on input line 1568.
 (pdftex.def)             Requested size: 199.64731pt x 184.76988pt.
-[59 <./Images/3d_graph_0.png>] [60 <./Images/n_dimensional.png>]
-<Images/non_convexity.png, id=899, 1765.59625pt x 520.94624pt>
+[60 <./Images/3d_graph_0.png>] [61 <./Images/n_dimensional.png>]
+<Images/non_convexity.png, id=919, 1765.59625pt x 520.94624pt>
 File: Images/non_convexity.png Graphic file (type png)
 <use Images/non_convexity.png>
-Package pdftex.def Info: Images/non_convexity.png  used on input line 1601.
+Package pdftex.def Info: Images/non_convexity.png  used on input line 1624.
 (pdftex.def)             Requested size: 469.75502pt x 138.59857pt.
- [61]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1633.
- [62 <./Images/non_convexity.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1633.
+ [62]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1656.
+ [63 <./Images/non_convexity.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1656.
  (./Finale.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1633.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1633.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1656.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1656.
 
 Package rerunfilecheck Info: File `Finale.out' has not changed.
-(rerunfilecheck)             Checksum: B47ED6CDE11E13D9787A2F3CF3FA4113;2963.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+(rerunfilecheck)             Checksum: 05F4E26D4466B3678421C7564E2414A7;2963.
 Package logreq Info: Writing requests to 'Finale.run.xml'.
 \openout1 = `Finale.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18593 strings out of 494805
- 297632 string characters out of 6178000
+ 18613 strings out of 494805
+ 297751 string characters out of 6178000
  757621 words of memory out of 5000000
- 21320 multiletter control sequences out of 15000+600000
+ 21333 multiletter control sequences out of 15000+600000
  15160 words of font info for 57 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
  38i,18n,77p,816b,788s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1514,10 +1506,10 @@ xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Finale.pdf (65 pages, 4383273 bytes).
+Output written on Finale.pdf (66 pages, 4385854 bytes).
 PDF statistics:
- 1046 PDF objects out of 1200 (max. 8388607)
- 862 compressed objects within 9 object streams
- 305 named destinations out of 1000 (max. 500000)
+ 1067 PDF objects out of 1200 (max. 8388607)
+ 882 compressed objects within 9 object streams
+ 312 named destinations out of 1000 (max. 500000)
  593 words of extra memory for PDF output out of 10000 (max. 10000000)
 
