@@ -12,7 +12,7 @@ to answer the question what is the optimal initial droplet size distribution tha
 + [Description](#description)
 + [Table of contents](#table-of-contents)
 + [Usage](#usage)
- * [The combustion model](the-combustion-model)
+  * [The combustion model](the-combustion-model)
  * [The temperature field](#the-temperature-field)
  * [The temperature space](#the-temperature-space)
  * [The flame height space (Monosectional)](#the-flame-height-space-monosectional)
