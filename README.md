@@ -4,7 +4,7 @@ Seminar report towards M.Eng in Aeronautical Engineering in the Technion univers
 In a nutshell, it presents an heuristic implementation of the Genetic Algorithm with respect to a combustion model. Eventually, it manages
 to answer the question what is the optimal initial droplet size distribution that guarantees an optimal flame performance.
 
-[<img src=https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/ArXiv_web.svg/250px-ArXiv_web.svg.png width=100/>](https://arxiv.org/abs/2008.07397)
+[<img src=https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/ArXiv_web.svg/250px-ArXiv_web.svg.png width=80/>](https://arxiv.org/abs/2008.07397)
 
 
 # Table of contents
