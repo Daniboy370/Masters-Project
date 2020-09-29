@@ -38,11 +38,11 @@ The temperature field
 
 The temperature field solution per chosen initial condition :
 
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src=https://github.com/Daniboy370/Masters-Project/blob/master/Misc/Images/T_field.png width=400 />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src=https://github.com/Daniboy370/Masters-Project/blob/master/Misc/Images/T_field.png width=550 />
 
 Latitudes of the temperature field in a 3D view :
 
-![alt text](https://github.com/Daniboy370/Masters-Project/blob/master/Misc/Images/T_field_raw.png)
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src=https://github.com/Daniboy370/Masters-Project/blob/master/Misc/Images/T_field_raw.png width=550 />
 
 The temperature space 
 -----------------------
