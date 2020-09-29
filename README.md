@@ -31,7 +31,7 @@ to answer the question what is the optimal initial droplet size distribution tha
 
 Development of the governing equations describing the mathematical model of the polydisperse spray diffusion flame by presenting the underpinning assumptions acting on the following combustion form :
 
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src=https://github.com/Daniboy370/Masters-Project/blob/master/Misc/Images/model_schema.png width=380 />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src=https://github.com/Daniboy370/Masters-Project/blob/master/Misc/Images/model_schema.png width=380 />
 
 
 The temperature field
@@ -68,19 +68,19 @@ The flame height space (Polysectional)
 
 Extracting the maximum flame height (eta<sub>max</sub>) vs. 3 parameters (Polysectional) :  
 
-![alt text](https://github.com/Daniboy370/Masters-Project/blob/master/Misc/Images/p_dist_poly.png)
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src=https://github.com/Daniboy370/Masters-Project/blob/master/Misc/Images/p_dist_poly.png width=700 />
 
 ## The optimization model
 In this section the combustion model is adjusted to the optimization model according to the following pseudocode :
 
-![alt text](https://github.com/Daniboy370/Masters-Project/blob/master/Misc/Images/GA_alg.png)
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src=https://github.com/Daniboy370/Masters-Project/blob/master/Misc/Images/GA_alg.png width=700 />
 
 > Subfolder : "\Genetic Algorithm" \
 > **run**: 'main_GA.m' 
 
 Utilizing *Matlab* ® Genetic Algorithm to find the optimal polydisperse spray : 
 
-![alt text](https://github.com/Daniboy370/Masters-Project/blob/master/Misc/Images/GA_opt.png)
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src=https://github.com/Daniboy370/Masters-Project/blob/master/Misc/Images/GA_opt.png width=600 />
 
 # Installation
 The project consists of two directories that implement two of the model's main scenarios. In order to avoid <br/> 
