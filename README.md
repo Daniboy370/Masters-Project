@@ -67,7 +67,7 @@ The flame height space (Polysectional)
 
 Extracting the maximum flame height (eta<sub>max</sub>) vs. 3 parameters (Polysectional) :  
 
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src=https://github.com/Daniboy370/Masters-Project/blob/master/Misc/Images/p_dist_poly.png width=850 />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src=https://github.com/Daniboy370/Masters-Project/blob/master/Misc/Images/p_dist_poly.png width=850 />
 
 ## The optimization model
 In this section the combustion model is adjusted to the optimization model according to the following pseudocode :
