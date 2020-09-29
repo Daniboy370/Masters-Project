@@ -43,7 +43,7 @@ The temperature field solution per chosen initial condition :
 
 Latitudes of the temperature field in a 3D view :
 
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src=https://github.com/Daniboy370/Masters-Project/blob/master/Misc/Images/T_field_raw.png width=850 />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src=https://github.com/Daniboy370/Masters-Project/blob/master/Misc/Images/T_field_raw.png width=800 />
 
 The temperature space 
 -----------------------
