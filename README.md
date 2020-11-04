@@ -11,7 +11,7 @@ In a nutshell, based on Navier-Stokes equations, I derive an analytical developm
 
 #### Rule based - Succeded 🥳 :
 
-✓ Genetic Algorithm - somewhat resembles the RL but significantly practical and more powerfull as it samples **heuristically** hundreds of simultaneous combinations and thus avoid local optima. Below, an image full of testosterone that has nothing to do with my research :
+✓ Genetic Algorithm - somewhat resembles the RL but significantly practical and more powerfull as it simultaneously samples hundreds of combinations and extracts the fittest, and thus avoid local optima.
 
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src='https://github.com/Daniboy370/Masters-Project/blob/master/Misc/Images/Shock_diamond.jpg?raw=true' width=550/>
 
