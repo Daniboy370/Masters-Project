@@ -1,17 +1,17 @@
 # Description &nbsp; &nbsp; @ [<img src=https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/ArXiv_web.svg/250px-ArXiv_web.svg.png width=60/>](https://arxiv.org/abs/2008.07397)
 
-
 My master's work in Aeronautical Engineering in the Technion university under supervisory of Prof. Barry Greenberg.
-In a nutshell, based on Navier-Stokes equations, I derive an analytical development of a combustion model that oftentimes can be seen in jet engines. Although being analytically expressed, it was (sadly) found to be non differentiable and thus classic optimization techniques cannot be applied. Therefore two optimization approaches were examined as a workaround : 
+In a nutshell, based on Navier-Stokes equations, I derive an analytical development of a combustion model that oftentimes can express the ignition of an injected fuel. Although being analytically expressed, it was practically found as non differentiable and thus, classic optimization techniques could not be applied. Therefore two optimization approaches were examined as a workaround : 
 
 ### Data driven - Falied ☹️ :
 
-* Artificial Neural Network - using the analytic model as a generative model  P(X, Y)  where the ANN minimizes the cost.
+* Artificial Neural Network - using the analytic development as a generative model  P(X, Y)  where the ANN minimizes a taylored weighted cost.
 
-* Reinforcement Learning - an agent is "navigating" on the manifold of combinations in the *k+1* space, in sought of the global optimum.
+* Reinforcement Learning - an agent is "navigating" (in response to rewards) on the input combinations manifold in the *k+1* space, in sought of global optimum.
 
-### Succeded :
-Genetic Algorithm - somewhat resembles the RL but significantly practical and more powerfull as it samples *heuristically* simultaneously hundreds of combination each iteration and thus avoid local optima.
+### Rule based - Succeded 🥳 :
+
+* Genetic Algorithm - somewhat resembles the RL but significantly practical and more powerfull as it samples **heuristically** hundreds of simultaneous combinations and thus avoid local optima. Below, an image full of testosterone that has nothing to do with my research :
 
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src='https://github.com/Daniboy370/Masters-Project/blob/master/Misc/Images/Shock_diamond.jpg?raw=true' width=550/>
 
