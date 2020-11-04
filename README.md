@@ -1,7 +1,7 @@
 # Description
 
 My master's work in Aeronautical Engineering in the Technion university under supervisory of Prof. Barry Greenberg.
-In a nutshell, based on Navier-Stokes equations, I derive an analytical development of a combustion model that oftentimes can express the ignition of an injected fuel. Although being analytically expressed, it was practically found as non differentiable and thus, classic optimization techniques could not be applied. Therefore two optimization approaches were examined as a workaround : [<img src=https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/ArXiv_web.svg/250px-ArXiv_web.svg.png width=60/>](https://arxiv.org/abs/2008.07397)
+In a nutshell, based on Navier-Stokes equations, I derive an analytical development of a combustion model that oftentimes can express the ignition of an injected fuel. Although being analytically expressed, it was practically found as non differentiable and thus, classic optimization techniques could not be applied. Therefore two optimization approaches were examined as a workaround :
 
 ### Data driven - Falied ☹️ :
 
@@ -14,6 +14,8 @@ In a nutshell, based on Navier-Stokes equations, I derive an analytical developm
 * Genetic Algorithm - somewhat resembles the RL but significantly practical and more powerfull as it samples **heuristically** hundreds of simultaneous combinations and thus avoid local optima. Below, an image full of testosterone that has nothing to do with my research :
 
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src='https://github.com/Daniboy370/Masters-Project/blob/master/Misc/Images/Shock_diamond.jpg?raw=true' width=550/>
+
+Paper @ [<img src=https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/ArXiv_web.svg/250px-ArXiv_web.svg.png width=60/>](https://arxiv.org/abs/2008.07397)
 
 # Table of contents
 
