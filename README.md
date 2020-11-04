@@ -2,14 +2,16 @@
 
 
 My master's work in Aeronautical Engineering in the Technion university under supervisory of Prof. Barry Greenberg.
-In a nutshell, based on Navier-Stokes equations, I derive an analytical development of a combustion model that oftentimes can be seen in jet engines. Although being analytic, it was (sadly) found as non differentiable and thus classic optimization techniques cannot be applied. Therefore, a workaround optimization approaches were examined : 
+In a nutshell, based on Navier-Stokes equations, I derive an analytical development of a combustion model that oftentimes can be seen in jet engines. Although being analytically expressed, it was (sadly) found to be non differentiable and thus classic optimization techniques cannot be applied. Therefore two optimization approaches were examined as a workaround : 
 
-* Data driven - using the analytic model as a generative source - $P(X, Y)$
+### Data driven - Falied ☹️ :
 
-it presents an heuristic implementation of the Genetic Algorithm with respect to an. 
-Eventually, it manages
-to answer the question what is the optimal initial droplet size distribution that guarantees an optimal flame performance.
+* Artificial Neural Network - using the analytic model as a generative model  P(X, Y)  where the ANN minimizes the cost.
 
+* Reinforcement Learning - an agent is "navigating" on the manifold of combinations in the *k+1* space, in sought of the global optimum.
+
+### Succeded :
+Genetic Algorithm - somewhat resembles the RL but significantly practical and more powerfull as it samples *heuristically* simultaneously hundreds of combination each iteration and thus avoid local optima.
 
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src='https://github.com/Daniboy370/Masters-Project/blob/master/Misc/Images/Shock_diamond.jpg?raw=true' width=550/>
 
