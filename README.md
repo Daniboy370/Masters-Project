@@ -6,7 +6,7 @@ to answer the question what is the optimal initial droplet size distribution tha
 
 [<img src=https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/ArXiv_web.svg/250px-ArXiv_web.svg.png width=75/>](https://arxiv.org/abs/2008.07397)
 
-<img src=https://github.com/Daniboy370/Masters-Project/blob/master/Misc/Images/Shock_diamond.jpg?raw=true width=300/>
+<img src='https://github.com/Daniboy370/Masters-Project/blob/master/Misc/Images/Shock_diamond.jpg?raw=true' width=300/>
 
 # Table of contents
 
