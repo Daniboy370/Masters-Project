@@ -7,7 +7,7 @@ In a nutshell, based on Navier-Stokes equations, I derive an analytical developm
 
 × Neural Network - using the analytic development as a generative model P(X, Y) that can be minimized by an ANN.
 
-× Reinforcement Learning - an agent "navigates" (in response to rewards) on the input manifold in sought of global optimum.
+× Reinforcement Learning - taking an agent that can learn to navigate in the combination space in response to rewards.
 
 #### Rule based - Succeded 🥳 :
 
