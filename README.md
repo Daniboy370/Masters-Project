@@ -6,7 +6,7 @@ In a nutshell, it presents an heuristic implementation of the Genetic Algorithm 
 to answer the question what is the optimal initial droplet size distribution that guarantees an optimal flame performance.
 
 
-&nbsp; <img src='https://github.com/Daniboy370/Masters-Project/blob/master/Misc/Images/Shock_diamond.jpg?raw=true' width=300/>
+&nbsp; <img src='https://github.com/Daniboy370/Masters-Project/blob/master/Misc/Images/Shock_diamond.jpg?raw=true' width=650/>
 
 # Table of contents
 
