@@ -5,11 +5,11 @@ In a nutshell, based on Navier-Stokes equations, I derive an analytical developm
 
 #### Data driven - Falied ☹️ :
 
-* Artificial Neural Network - using the analytic development as a generative model  P(X, Y)  where the ANN minimizes a taylored weighted cost.
+* Artificial Neural Network - using the analytic development as a generative model  P(X, Y)  and an ANN as a cost minimizer.
 
-* Reinforcement Learning - an agent is "navigating" (in response to rewards) on the input combinations manifold in the *k+1* space, in sought of global optimum.
+* Reinforcement Learning - an agent "navigates" (in response to rewards) on the input manifold in sought of global optimum.
 
-##### Rule based - Succeded 🥳 :
+#### Rule based - Succeded 🥳 :
 
 * Genetic Algorithm - somewhat resembles the RL but significantly practical and more powerfull as it samples **heuristically** hundreds of simultaneous combinations and thus avoid local optima. Below, an image full of testosterone that has nothing to do with my research :
 
