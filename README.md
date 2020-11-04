@@ -15,10 +15,7 @@ In a nutshell, based on Navier-Stokes equations, I derive an analytical developm
 
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src='https://github.com/Daniboy370/Masters-Project/blob/master/Misc/Images/Shock_diamond.jpg?raw=true' width=550/>
 
-Paper @ [<img src=https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/ArXiv_web.svg/250px-ArXiv_web.svg.png width=60/>](https://arxiv.org/abs/2008.07397)
-
 # Table of contents
-
 
 <!--ts-->
 + [Description](#description)
@@ -33,6 +30,8 @@ Paper @ [<img src=https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/ArXi
 + [Installation](#installation)
 + [Citation](#citation)
 <!--te-->
+
+[<img src=https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/ArXiv_web.svg/250px-ArXiv_web.svg.png width=70/>](https://arxiv.org/abs/2008.07397)
 
 # Usage
 
