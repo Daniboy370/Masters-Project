@@ -5,7 +5,7 @@ In a nutshell, based on Navier-Stokes equations, I derive an analytical developm
 
 #### Data driven - Falied ☹️ :
 
-× Artificial Neural Network - using analytic development as a sample generator P(X, Y) that can be minimzied by an ANN.
+× Neural Network - using the analytic development as a generative model P(X, Y) that can be minimized by an ANN.
 
 × Reinforcement Learning - an agent "navigates" (in response to rewards) on the input manifold in sought of global optimum.
 
