@@ -13,6 +13,7 @@ In a nutshell, based on Navier-Stokes equations, I derive an analytical developm
 
 ✓ Genetic Algorithm - somewhat resembles the RL but significantly practical and more powerfull as it simultaneously samples hundreds of combinations and extracts the fittest, and thus avoid local optima.
 
+
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src='https://github.com/Daniboy370/Masters-Project/blob/master/Misc/Images/Shock_diamond.jpg?raw=true' width=550/>
 
 # Table of contents
