@@ -7,7 +7,7 @@ In a nutshell, based on Navier-Stokes equations, I derive an analytical developm
 
 × Neural Network - using the analytic development as a generative model P(X, Y) that can be minimized by an ANN.
 
-× Reinforcement Learning - taking an agent that can learn to navigate in the combination space in response to rewards.
+× Reinforcement Learning - an agent that can learn to navigate in the combination space, in response to rewards.
 
 #### Rule based - Succeded 🥳 :
 
