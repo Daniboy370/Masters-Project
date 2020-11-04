@@ -1,7 +1,7 @@
 # Description
 
 My master's work in Aeronautical Engineering in the Technion university under supervisory of Prof. Barry Greenberg.
-In a nutshell, based on Navier-Stokes equations, I derive an analytical development of a combustion model that oftentimes can express the ignition of an injected fuel. Although being analytically expressed, it was practically found as non differentiable and thus, classic optimization techniques could not be applied. Therefore two optimization approaches were examined as a workaround :
+In a nutshell, based on Navier-Stokes equations, I derive an analytical development of a combustion model that oftentimes expresses the ignition of an injected fuel. Although being analytically expressed, it was practically found as non differentiable and thus, classic optimization techniques could not been applied. Therefore two optimization approaches were examined as a workaround :
 
 #### Data driven - Falied ☹️ :
 
