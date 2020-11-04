@@ -1,8 +1,13 @@
 # Description &nbsp; &nbsp; @ [<img src=https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/ArXiv_web.svg/250px-ArXiv_web.svg.png width=60/>](https://arxiv.org/abs/2008.07397)
 
 
-My master's work in Aeronautical Engineering in the Technion university under Prof. Barry Greenberg supervisory.
-In a nutshell, it presents an heuristic implementation of the Genetic Algorithm with respect to a combustion model. Eventually, it manages
+My master's work in Aeronautical Engineering in the Technion university under supervisory of Prof. Barry Greenberg.
+In a nutshell, based on Navier-Stokes equations, I derive an analytical development of a combustion model that oftentimes can be seen in jet engines. Although being analytic, it was (sadly) found as non differentiable and thus classic optimization techniques cannot be applied. Therefore, a workaround optimization approaches were examined : 
+
+* Data driven - using the analytic model as a generative source - $P(X, Y)$
+
+it presents an heuristic implementation of the Genetic Algorithm with respect to an. 
+Eventually, it manages
 to answer the question what is the optimal initial droplet size distribution that guarantees an optimal flame performance.
 
 
