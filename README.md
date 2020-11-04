@@ -3,13 +3,13 @@
 My master's work in Aeronautical Engineering in the Technion university under supervisory of Prof. Barry Greenberg.
 In a nutshell, based on Navier-Stokes equations, I derive an analytical development of a combustion model that oftentimes can express the ignition of an injected fuel. Although being analytically expressed, it was practically found as non differentiable and thus, classic optimization techniques could not be applied. Therefore two optimization approaches were examined as a workaround :
 
-### Data driven - Falied ☹️ :
+#### Data driven - Falied ☹️ :
 
 * Artificial Neural Network - using the analytic development as a generative model  P(X, Y)  where the ANN minimizes a taylored weighted cost.
 
 * Reinforcement Learning - an agent is "navigating" (in response to rewards) on the input combinations manifold in the *k+1* space, in sought of global optimum.
 
-### Rule based - Succeded 🥳 :
+##### Rule based - Succeded 🥳 :
 
 * Genetic Algorithm - somewhat resembles the RL but significantly practical and more powerfull as it samples **heuristically** hundreds of simultaneous combinations and thus avoid local optima. Below, an image full of testosterone that has nothing to do with my research :
 
