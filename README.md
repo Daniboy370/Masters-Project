@@ -32,8 +32,6 @@ In a nutshell, based on Navier-Stokes equations, I derive an analytical developm
 + [Citation](#citation)
 <!--te-->
 
-[<img src=https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/ArXiv_web.svg/250px-ArXiv_web.svg.png width=70/>](https://arxiv.org/abs/2008.07397)
-
 # Usage
 
 ## The combustion model
@@ -129,3 +127,4 @@ month     = {July},
 url       = {https://github.com/Daniboy370/Masters-Project}
 }
 ```
+[<img src=https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/ArXiv_web.svg/250px-ArXiv_web.svg.png width=70/>](https://arxiv.org/abs/2008.07397)
