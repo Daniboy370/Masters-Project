@@ -1,7 +1,7 @@
 # Description
 
-My [**master's**](https://arxiv.org/abs/2008.07397) work in Aeronautical Engineering in the Technion university under supervisory of Prof. Barry Greenberg.
-In a nutshell, based on Navier-Stokes equations, I derive an analytical development of a combustion model that oftentimes expresses the ignition of an injected fuel. Although being analytically expressed, it was practically found as non differentiable and thus, classic optimization techniques could not been applied. Therefore two optimization approaches were examined as a workaround :
+My [**masters**](https://arxiv.org/abs/2008.07397) Aerospace Engineering under supervisory of Prof. Barry Greenberg, Technion.
+High pressure fuel is injected and iginited into a control volume that can be modeled using Navier-Stokes equations. After long (& wearisome) mathematical developments,  the combustion plane is expressed as a set of analytical equations (time invariant), where the normalized output represents the flame's height and temperature. Despite being continuous, the function was found practically non-differetiable, such that any classic optimization approaches (Gradient Besed) could not been applied. Therefore two optimization approaches were examined as a workaround :
 
 #### Data driven - Falied ☹️ :
 
