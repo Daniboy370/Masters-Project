@@ -5,9 +5,9 @@ High pressure fuel is injected and iginited into a control volume that can be mo
 
 #### Data driven - Falied ☹️ :
 
-× Neural Network - using the analytic development as a generative model P(X, Y) that can be minimized by an ANN.
+× Neural Network - Utilizing the analytic function as a generative model P(X, Y) that maps pairs of physical quantites (X) into flame's characteristics (Y). The estimator (ANN) learns to approximate y-output that minimize a square loss error.
 
-× Reinforcement Learning - an agent that can learn to navigate in the combination space, in response to rewards.
+× Reinforcement Learning - an agent that learns to navigate on the loss surface, in response to rewards.
 
 #### Rule based - Succeded 🥳 :
 
